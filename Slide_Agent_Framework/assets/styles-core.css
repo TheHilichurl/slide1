@@ -834,12 +834,12 @@ html, body {
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   border-top: 6px solid var(--color-primary);
-  padding: 14px 20px;
+  padding: 20px 24px;
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 12px;
   transition: all 0.3s;
 }
 
@@ -852,7 +852,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .pillar-card-title-group {
@@ -873,18 +873,18 @@ html, body {
 }
 
 #slide-3 .slide-category { font-size: 18px; }
-#slide-3 .slide-title { font-size: 50px; }
-#slide-3 .slide-subtitle { font-size: 24px; }
+#slide-3 .slide-title { font-size: 53px; }
+#slide-3 .slide-subtitle { font-size: 26px; }
 
 .pillar-title {
   font-family: var(--font-heading);
-  font-size: 27px;
+  font-size: 29px;
   font-weight: 900;
   color: var(--color-secondary);
 }
 
 .pillar-tag {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
   padding: 4px 14px;
   border-radius: var(--radius-full);
@@ -901,8 +901,8 @@ html, body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 27px;
+  gap: 8px;
+  font-size: 34px;
   color: #1E293B;
   line-height: 1.35;
 }
@@ -911,7 +911,7 @@ html, body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 27px;
+  font-size: 34px;
 }
 
 .bullet-dot {
@@ -919,8 +919,113 @@ html, body {
   height: 8px;
   border-radius: 50%;
   background: var(--color-primary);
-  margin-top: 12px;
+  margin-top: 14px;
   flex-shrink: 0;
+}
+
+/* ====================================================================
+   LAYOUT 03: FOUR PILLARS 4-COLUMN HORIZONTAL GRID
+   ==================================================================== */
+.pillars-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  flex: 1;
+  margin-top: 10px;
+}
+
+.pillar-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: 24px 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-card.border-top-primary {
+  border-top: 6px solid var(--color-primary);
+}
+
+.pillar-card.border-top-secondary {
+  border-top: 6px solid var(--color-secondary);
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pillar-card .pillar-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pillar-num-badge {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.pillar-card .pillar-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillar-card .pillar-header h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  line-height: 1.25;
+}
+
+.pillar-lead {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+
+.pillar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.pillar-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--color-text-main);
+}
+
+.pillar-list .check-icon {
+  width: 18px;
+  height: 18px;
+  color: #10B981;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .slide-3-photo-strip {
@@ -2196,395 +2301,6 @@ html, body {
 
 #export-modal-percent {
   color: #F37021;
-}
-
-/* ==========================================================================
-   SLIDE 4: HISTORICAL REVOLTS TIMELINE & BACH DANG BATTLE
-   ========================================================================== */
-.slide-4-history-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.05fr;
-  gap: 24px;
-  height: calc(100% - 92px);
-}
-
-.slide-4-timeline-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: 100%;
-}
-
-.history-event-card {
-  background: #FFFFFF;
-  border: 1.5px solid var(--color-border);
-  border-left: 6px solid var(--color-primary);
-  border-radius: var(--radius-md);
-  padding: 14px 18px;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1;
-  transition: all 0.3s;
-}
-
-.history-event-card:hover {
-  transform: translateX(4px);
-  box-shadow: var(--shadow-md);
-}
-
-.history-event-card:nth-child(2) {
-  border-left-color: var(--color-secondary);
-}
-
-.history-event-card:nth-child(3) {
-  border-left-color: #7C3AED;
-}
-
-.history-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.history-card-header h4 {
-  font-family: var(--font-heading);
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.history-time-badge {
-  font-size: 14px;
-  font-weight: 800;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  background: var(--color-primary-soft);
-  color: var(--color-primary-dark);
-}
-
-.history-event-card p {
-  font-size: 26px;
-  color: #1E293B;
-  line-height: 1.35;
-}
-
-.history-event-card cite {
-  font-size: 23px;
-  font-style: italic;
-  color: #0369A1;
-  font-weight: 600;
-}
-
-.slide-4-battle-card {
-  background: #FFFFFF;
-  border: 2px solid var(--color-secondary);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.battle-card-media {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-}
-
-.battle-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-}
-
-.battle-card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(0, 34, 68, 0.95) 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 16px 20px;
-}
-
-.battle-card-overlay h4 {
-  font-family: var(--font-heading);
-  font-size: 26px;
-  font-weight: 900;
-  color: #FFFFFF;
-  line-height: 1.25;
-}
-
-.battle-card-content {
-  padding: 16px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  flex: 1;
-}
-
-.battle-tactics-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 26px;
-  color: #1E293B;
-}
-
-.battle-tactics-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  line-height: 1.35;
-}
-
-/* ==========================================================================
-   SLIDE 7: CYBERSPACE 5TH DOMAIN LAYOUT
-   ========================================================================== */
-.slide-7-cyber-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.cyber-domain-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius-md);
-  padding: 12px 24px;
-  backdrop-filter: blur(10px);
-}
-
-.domain-pill {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--font-heading);
-  font-size: 20px;
-  font-weight: 800;
-  color: #94A3B8;
-  padding: 6px 16px;
-  border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.domain-pill.active-cyber {
-  background: linear-gradient(135deg, var(--color-primary), #FB923C);
-  color: #FFFFFF;
-  box-shadow: 0 0 25px rgba(234, 88, 12, 0.6);
-  font-size: 22px;
-  font-weight: 900;
-}
-
-.slide-7-threats-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  flex: 1;
-}
-
-.cyber-threat-card {
-  background: rgba(15, 23, 42, 0.85);
-  border: 2px solid rgba(56, 189, 248, 0.35);
-  border-radius: var(--radius-lg);
-  padding: 22px 24px;
-  backdrop-filter: blur(12px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s;
-}
-
-.cyber-threat-card:hover {
-  transform: translateY(-4px);
-  border-color: #38BDF8;
-  box-shadow: 0 20px 50px rgba(2, 132, 199, 0.3);
-}
-
-.cyber-threat-card.danger {
-  border-color: rgba(234, 88, 12, 0.45);
-}
-
-.cyber-threat-card.danger:hover {
-  border-color: #EA580C;
-  box-shadow: 0 20px 50px rgba(234, 88, 12, 0.35);
-}
-
-.threat-card-top {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 12px;
-}
-
-.threat-icon-box {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  background: rgba(2, 132, 199, 0.25);
-  border: 1px solid #38BDF8;
-  color: #38BDF8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.cyber-threat-card.danger .threat-icon-box {
-  background: rgba(234, 88, 12, 0.25);
-  border-color: #FB923C;
-  color: #FB923C;
-}
-
-.threat-card-top h3 {
-  font-family: var(--font-heading);
-  font-size: 27px;
-  font-weight: 900;
-  color: #FFFFFF;
-  line-height: 1.25;
-}
-
-.threat-body-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 28px;
-  color: #CBD5E1;
-  line-height: 1.35;
-}
-
-.threat-body-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.threat-summary-bar {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius-sm);
-  padding: 10px 14px;
-  font-size: 23px;
-  font-weight: 700;
-  color: #FDBA74;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* ==========================================================================
-   SLIDE 8: IT & CYBERSECURITY 2x2 COMPARISON MATRIX
-   ========================================================================== */
-.slide-8-it-matrix {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 16px;
-  height: 100%;
-}
-
-.it-compare-card {
-  background: #FFFFFF;
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: all 0.3s;
-}
-
-.it-compare-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-primary);
-}
-
-.compare-card-dual-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding-bottom: 8px;
-  border-bottom: 1.5px solid #F1F5F9;
-}
-
-.ancient-tactic-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #FFEDD5;
-  color: #C2410C;
-  font-family: var(--font-heading);
-  font-weight: 900;
-  font-size: 16px;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.compare-arrow {
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.modern-tech-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #E0F2FE;
-  color: #0369A1;
-  font-family: var(--font-heading);
-  font-weight: 900;
-  font-size: 16px;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.it-card-title {
-  font-family: var(--font-heading);
-  font-size: 24px;
-  font-weight: 900;
-  color: var(--color-secondary);
-  line-height: 1.25;
-}
-
-.it-body-bullets {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 26px;
-  color: #1E293B;
-  line-height: 1.35;
-}
-
-.it-body-bullets li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 /* ==========================================================================

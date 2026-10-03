@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mẫu Thuyết Trình Chuẩn Đại Học Đại Nam | DNU Slide Framework</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Headings) & Be Vietnam Pro (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+
+  <!-- External CDN Libraries -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="../assets/styles-core.css">
+</head>
+<body>
+
+  <!-- Top Progress Indicator -->
+  <div id="top-progress-bar"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notification">
+    <i data-lucide="check-circle" style="color: #10B981; width: 26px; height: 26px; flex-shrink: 0;"></i>
+    <span id="toast-msg">Thông báo hệ thống</span>
+  </div>
+
+  <!-- 16:9 Viewport Shell -->
+  <div id="viewport">
+    <div id="slide-stage">
+
+      <!-- ====================================================================
+           SLIDE 1: HERO / COVER (LAYOUT 01)
+           ==================================================================== -->
+      <section class="slide theme-dark active" id="slide-1" data-slide-index="1">
+        <header class="slide-header">
+          <div class="header-left">
+            <div class="brand-slogan">HỌC ĐỂ THAY ĐỔI</div>
+            <div class="header-topic-badge">
+              <i data-lucide="flame" style="width: 18px; height: 18px;"></i>
+              CHUYÊN ĐỀ BÁO CÁO THUYẾT TRÌNH TRỌNG ĐIỂM
+            </div>
+          </div>
+          <div class="header-right">
+            <img src="../assets/dai-nam-logo-ngang.svg" alt="Trường Đại học Đại Nam" class="official-logo-img">
+          </div>
+        </header>
+
+        <div class="slide-body" style="background: radial-gradient(circle at 75% 35%, #0B254E 0%, #050F22 100%);">
+          <div class="slide-1-container">
+            <div class="hero-content">
+              <div class="hero-badge-tag">
+                <i data-lucide="sparkles" style="width: 18px; height: 18px;"></i>
+                TIÊU CHUẨN TRÌNH CHIẾU DNU FRAMEWORK
+              </div>
+
+              <h1 class="hero-main-title">
+                TIÊU CHUẨN THIẾT KẾ <span class="highlight-orange">"ĐẠI NAM STYLE"</span><br>
+                & KHUNG SLIDE AGENT
+              </h1>
+
+              <p class="hero-sub-text">
+                Khung mẫu slide chuẩn 16:9 sắc nét 2K, tích hợp công nghệ chống méo ảnh và xuất file PowerPoint/PDF chuyên nghiệp.
+              </p>
+
+              <div class="hero-meta-grid">
+                <div class="hero-meta-card">
+                  <div class="meta-card-icon">
+                    <i data-lucide="users" style="width: 26px; height: 26px;"></i>
+                  </div>
+                  <div class="meta-card-content">
+                    <h5>Đơn vị báo cáo</h5>
+                    <p>Nhóm 1 • Tiểu đội 1 • Trung đội 1</p>
+                  </div>
+                </div>
+
+                <div class="hero-meta-card">
+                  <div class="meta-card-icon" style="background: #003B7A;">
+                    <i data-lucide="award" style="width: 26px; height: 26px;"></i>
+                  </div>
+                  <div class="meta-card-content">
+                    <h5>Biên chế & Học phần</h5>
+                    <p>Đại đội 6 • Môn: GDQP-AN</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="hero-cta-btn" onclick="goToSlide(2)">
+                <span>Bắt đầu Thuyết trình</span>
+                <i data-lucide="arrow-right" style="width: 24px; height: 24px;"></i>
+              </button>
+            </div>
+
+            <!-- Hero Visual Card -->
+            <div class="hero-visual-card">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0A2246 0%, #003B7A 50%, #EA580C 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="text-align: center; color: #FFFFFF; padding: 40px;">
+                  <i data-lucide="monitor-play" style="width: 100px; height: 100px; color: #FB923C; margin-bottom: 20px;"></i>
+                  <h3 style="font-size: 32px; font-weight: 900; line-height: 1.3;">16:9 Viewport Engine</h3>
+                  <p style="font-size: 20px; color: #CBD5E1; margin-top: 10px;">Chuẩn hóa toạ độ 1920x1080px tự động co giãn theo mọi thiết bị</p>
+                </div>
+              </div>
+              <div class="hero-visual-overlay">
+                <div class="visual-overlay-badge">
+                  <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i>
+                  ĐẠI HỌC ĐẠI NAM
+                </div>
+                <h3 style="color: #FFFFFF; font-size: 26px; font-weight: 900; line-height: 1.3;">
+                  Đổi Mới Sáng Tạo - Học Để Thay Đổi
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="slide-footer">
+          <div class="footer-left">
+            <div class="footer-timer-display"><i data-lucide="clock" style="width: 18px; height: 18px;"></i><span class="timer-text">00:00</span></div>
+            <a href="https://dainam.edu.vn" target="_blank" rel="noopener noreferrer" class="footer-dnu-link"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i>dainam.edu.vn</a>
+          </div>
+          <div class="footer-center"><span class="footer-meta-pill">Nhóm 1</span> | Tiểu đội 1 | Trung đội 1 | Đại đội 6 | Môn: GDQP-AN</div>
+          <div class="footer-right"><div class="slide-counter"><span class="current-num">01</span> / 03</div></div>
+        </footer>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 2: 4 PILLARS GRID (LAYOUT 03)
+           ==================================================================== -->
+      <section class="slide" id="slide-2" data-slide-index="2">
+        <header class="slide-header">
+          <div class="header-left">
+            <div class="brand-slogan">HỌC ĐỂ THAY ĐỔI</div>
+            <div class="header-topic-badge">PHẦN I: TRỤ CỘT HỆ THỐNG</div>
+          </div>
+          <div class="header-right">
+            <img src="../assets/dai-nam-logo-ngang.svg" alt="Trường Đại học Đại Nam" class="official-logo-img">
+          </div>
+        </header>
+
+        <div class="slide-body">
+          <div class="slide-title-wrap">
+            <span class="slide-category"><i data-lucide="layers" style="width: 18px; height: 18px;"></i>Hệ thống nhận diện</span>
+            <h2 class="slide-title">4 TRỤ CỘT THIẾT KẾ CỦA SLIDE AGENT FRAMEWORK</h2>
+            <p class="slide-subtitle">Các nguyên tắc cốt lõi bảo đảm tính thẩm mỹ, nhất quán và độ nét siêu cao khi trình chiếu</p>
+          </div>
+
+          <div class="pillars-grid-4">
+            <div class="pillar-card border-top-primary">
+              <div class="pillar-header">
+                <div class="pillar-num-badge">01</div>
+                <div class="pillar-icon-box"><i data-lucide="palette" style="width: 32px; height: 32px;"></i></div>
+                <h3>Bản Sắc Đại Nam</h3>
+              </div>
+              <p class="pillar-lead">Màu cam năng động kết hợp xanh cobalt uy tín, tôn vinh slogan "Học để thay đổi".</p>
+              <ul class="pillar-list">
+                <li><i data-lucide="check" class="check-icon"></i><span>Tone cam chủ đạo: #F37021 / #EA580C.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Tone xanh cobalt: #003B7A / #0A2246.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Header & Footer chuẩn mực trên mọi slide.</span></li>
+              </ul>
+            </div>
+
+            <div class="pillar-card border-top-secondary">
+              <div class="pillar-header">
+                <div class="pillar-num-badge">02</div>
+                <div class="pillar-icon-box" style="background: rgba(0, 59, 122, 0.12); color: var(--color-secondary);"><i data-lucide="maximize" style="width: 32px; height: 32px;"></i></div>
+                <h3>Khung Hình 16:9</h3>
+              </div>
+              <p class="pillar-lead">Toạ độ nội bộ cố định 1920x1080px, co giãn thông minh không méo chữ.</p>
+              <ul class="pillar-list">
+                <li><i data-lucide="check" class="check-icon"></i><span>Tối ưu hoàn hảo cho máy chiếu hội trường.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>CSS transform scale không biến dạng tỷ lệ.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Phím tắt F (Toàn màn hình), H (Tập trung).</span></li>
+              </ul>
+            </div>
+
+            <div class="pillar-card border-top-primary">
+              <div class="pillar-header">
+                <div class="pillar-num-badge">03</div>
+                <div class="pillar-icon-box"><i data-lucide="image" style="width: 32px; height: 32px;"></i></div>
+                <h3>Chống Méo Ảnh</h3>
+              </div>
+              <p class="pillar-lead">Công nghệ canvas hook độc quyền giữ nguyên tỷ lệ tự nhiên của mọi bức ảnh.</p>
+              <ul class="pillar-list">
+                <li><i data-lucide="check" class="check-icon"></i><span>Tự động crop chuẩn object-fit cover/contain.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Bắt toạ độ object-position chính xác.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Loại bỏ hoàn toàn lỗi ép bẹp/kéo giãn ảnh.</span></li>
+              </ul>
+            </div>
+
+            <div class="pillar-card border-top-secondary">
+              <div class="pillar-header">
+                <div class="pillar-num-badge">04</div>
+                <div class="pillar-icon-box" style="background: rgba(0, 59, 122, 0.12); color: var(--color-secondary);"><i data-lucide="file-output" style="width: 32px; height: 32px;"></i></div>
+                <h3>Xuất 2K Siêu Nét</h3>
+              </div>
+              <p class="pillar-lead">Đóng gói PPTX và PDF 2K trực tiếp trên trình duyệt chỉ với 1 click chuột.</p>
+              <ul class="pillar-list">
+                <li><i data-lucide="check" class="check-icon"></i><span>Độ phân giải chuẩn 2K (2560x1440).</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Tự động ẩn Web HUD và Timer khi chụp.</span></li>
+                <li><i data-lucide="check" class="check-icon"></i><span>Thanh tiến trình trực quan thông minh.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <footer class="slide-footer">
+          <div class="footer-left">
+            <div class="footer-timer-display"><i data-lucide="clock" style="width: 18px; height: 18px;"></i><span class="timer-text">00:00</span></div>
+            <a href="https://dainam.edu.vn" target="_blank" rel="noopener noreferrer" class="footer-dnu-link"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i>dainam.edu.vn</a>
+          </div>
+          <div class="footer-center"><span class="footer-meta-pill">Nhóm 1</span> | Tiểu đội 1 | Trung đội 1 | Đại đội 6 | Môn: GDQP-AN</div>
+          <div class="footer-right"><div class="slide-counter"><span class="current-num">02</span> / 03</div></div>
+        </footer>
+      </section>
+
+      <!-- ====================================================================
+           SLIDE 3: CLOSING QUOTE & SUMMARY (LAYOUT 08)
+           ==================================================================== -->
+      <section class="slide theme-dark" id="slide-3" data-slide-index="3">
+        <header class="slide-header">
+          <div class="header-left">
+            <div class="brand-slogan">HỌC ĐỂ THAY ĐỔI</div>
+            <div class="header-topic-badge">TỔNG KẾT BÁO CÁO</div>
+          </div>
+          <div class="header-right">
+            <img src="../assets/dai-nam-logo-ngang.svg" alt="Trường Đại học Đại Nam" class="official-logo-img">
+          </div>
+        </header>
+
+        <div class="slide-body" style="background: radial-gradient(circle at 50% 40%, #0A2246 0%, #040D1C 100%);">
+          <div class="slide-10-wrap">
+            <div class="quote-hero-banner">
+              <div class="quote-img-box">
+                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #F37021, #003B7A); display: flex; align-items: center; justify-content: center; color: #FFFFFF;">
+                  <i data-lucide="award" style="width: 80px; height: 80px;"></i>
+                </div>
+              </div>
+              <div class="quote-text-wrap">
+                <blockquote>
+                  "Học để thay đổi bản thân, thay đổi xã hội và vươn mình ra thế giới."
+                </blockquote>
+                <cite>— Tinh thần cốt lõi của sinh viên Trường Đại học Đại Nam</cite>
+              </div>
+            </div>
+
+            <div class="closing-cards-grid">
+              <div class="conclusion-card">
+                <h4><i data-lucide="check-circle-2" style="width: 24px; height: 24px;"></i>1. Tiêu Chuẩn Thống Nhất</h4>
+                <p>Mọi slide thuyết trình tuân thủ đồng bộ nhận diện, giúp bài báo cáo đạt điểm số cao nhất.</p>
+              </div>
+              <div class="conclusion-card">
+                <h4><i data-lucide="sparkles" style="width: 24px; height: 24px;"></i>2. Dễ Dàng Tái Sử Dụng</h4>
+                <p>Sao chép thư mục boilerplate, chỉnh sửa văn bản là hoàn thành slide mới trong 10 phút.</p>
+              </div>
+              <div class="conclusion-card">
+                <h4><i data-lucide="heart" style="width: 24px; height: 24px;"></i>3. Tự Hào Đại Nam</h4>
+                <p>Khắc ghi phương châm <strong>"Học để thay đổi"</strong>, thế hệ trẻ DNU vững bước hội nhập!</p>
+              </div>
+            </div>
+
+            <div class="closing-action-box">
+              <div class="qa-invite">
+                <h4>XIN TRÂN TRỌNG CẢM ƠN QUÝ THẦY CÔ VÀ CÁC BẠN!</h4>
+                <p>Nhóm 1 sẵn sàng lắng nghe ý kiến nhận xét và giải đáp câu hỏi (Q&A).</p>
+              </div>
+              <div class="closing-thank-badge" style="cursor: pointer;" onclick="goToSlide(1)">
+                <i data-lucide="message-square" style="width: 22px; height: 22px;"></i>
+                <span>PHIÊN THẢO LUẬN & HỎI ĐÁP (Q&A)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="slide-footer">
+          <div class="footer-left">
+            <div class="footer-timer-display"><i data-lucide="clock" style="width: 18px; height: 18px;"></i><span class="timer-text">00:00</span></div>
+            <a href="https://dainam.edu.vn" target="_blank" rel="noopener noreferrer" class="footer-dnu-link"><i data-lucide="external-link" style="width: 16px; height: 16px;"></i>dainam.edu.vn</a>
+          </div>
+          <div class="footer-center"><span class="footer-meta-pill">Nhóm 1</span> | Tiểu đội 1 | Trung đội 1 | Đại đội 6 | Môn: GDQP-AN</div>
+          <div class="footer-right"><div class="slide-counter"><span class="current-num">03</span> / 03</div></div>
+        </footer>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- FLOATING PRESENTATION HUD CONTROLS -->
+  <div id="hud-controls">
+    <button class="hud-btn" id="btn-prev" title="Slide trước (Phím ← hoặc PageUp)" onclick="prevSlide()">
+      <i data-lucide="chevron-left" style="width: 22px; height: 22px;"></i>
+    </button>
+
+    <div class="hud-slide-picker-wrap">
+      <select id="slide-select-picker" onchange="goToSlide(parseInt(this.value, 10))">
+        <option value="1">01. Trang bìa: Tiêu chuẩn thiết kế</option>
+        <option value="2">02. 4 Trụ cột thiết kế Framework</option>
+        <option value="3">03. Tổng kết & Tinh thần Đại Nam</option>
+      </select>
+    </div>
+
+    <button class="hud-btn" id="btn-next" title="Slide tiếp theo (Phím → hoặc Space)" onclick="nextSlide()">
+      <i data-lucide="chevron-right" style="width: 22px; height: 22px;"></i>
+    </button>
+
+    <div class="hud-divider"></div>
+
+    <div class="hud-timer-badge" title="Đồng hồ tính giờ thuyết trình">
+      <i data-lucide="clock" style="width: 18px; height: 18px; color: #FB923C;"></i>
+      <span id="hud-timer-val">00:00</span>
+    </div>
+
+    <button class="hud-btn" id="btn-timer-toggle" title="Bắt đầu tính giờ" onclick="startPresentationTimer()">
+      <i data-lucide="play" style="width: 18px; height: 18px;"></i>
+    </button>
+
+    <button class="hud-btn" id="btn-timer-reset" title="Đặt lại đồng hồ về 00:00" onclick="resetPresentationTimer()">
+      <i data-lucide="rotate-ccw" style="width: 18px; height: 18px;"></i>
+    </button>
+
+    <div class="hud-divider"></div>
+
+    <button class="hud-btn" id="btn-fullscreen" title="Bật/Tắt toàn màn hình (Phím F)" onclick="toggleFullscreen()">
+      <i data-lucide="maximize" style="width: 19px; height: 19px;"></i>
+    </button>
+
+    <button class="hud-btn" id="btn-focus" title="Chế độ tập trung - Ẩn/Hiện HUD (Phím H)" onclick="toggleFocusMode()">
+      <i data-lucide="eye" style="width: 19px; height: 19px;"></i>
+    </button>
+
+    <button class="hud-btn text-btn" id="btn-export-pdf" title="Xuất PDF 2K siêu nét" onclick="exportToPDF2K()">
+      <i data-lucide="file-text" style="width: 17px; height: 17px; color: #38BDF8;"></i>
+      <span>Xuất PDF</span>
+    </button>
+
+    <button class="hud-btn primary text-btn" id="btn-export-pptx" title="Xuất PowerPoint 2K" onclick="exportToPPTX2K()">
+      <i data-lucide="presentation" style="width: 17px; height: 17px;"></i>
+      <span>Xuất PPTX</span>
+    </button>
+  </div>
+
+  <!-- EXPORT PROGRESS MODAL -->
+  <div class="modal-overlay" id="export-progress-modal">
+    <div class="export-modal-box">
+      <div class="export-modal-header">
+        <div class="export-modal-icon">
+          <i data-lucide="download-cloud" style="width: 32px; height: 32px; color: #F37021;"></i>
+        </div>
+        <div class="export-modal-title-wrap">
+          <h3 id="export-modal-title">Đang Xuất Bản Trình Chiếu 2K</h3>
+          <p id="export-modal-desc">Đang chụp từng slide ở độ phân giải 2K siêu nét...</p>
+        </div>
+      </div>
+      <div class="export-progress-track">
+        <div class="export-progress-bar" id="export-modal-bar"></div>
+      </div>
+      <div class="export-modal-status">
+        <span id="export-modal-current">Chuẩn bị khởi tạo...</span>
+        <span id="export-modal-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engine Script -->
+  <script src="app.js"></script>
+</body>
+</html>
