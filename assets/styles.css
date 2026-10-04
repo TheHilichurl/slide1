@@ -3172,3 +3172,186 @@ body.exporting-2k .footer-timer-display,
 body.exporting-2k .slide-timer-badge {
   display: none !important;
 }
+
+/* ==========================================================================
+   ELEGANT 7% - 10% GLOW & HIGH CONTRAST TYPOGRAPHY ENGINE
+   ========================================================================== */
+
+/* 1. HEADER GLOW (7%) */
+.brand-slogan {
+  text-shadow: 0 0 10px rgba(243, 112, 33, 0.12), 0 0 18px rgba(243, 112, 33, 0.07) !important;
+}
+
+.header-topic-badge {
+  box-shadow: 0 0 14px rgba(0, 59, 122, 0.07) !important;
+  text-shadow: 0 0 8px rgba(0, 59, 122, 0.07) !important;
+}
+
+/* 2. FOOTER GLOW (7%) */
+.footer-timer-display {
+  box-shadow: 0 0 12px rgba(0, 59, 122, 0.07) !important;
+  text-shadow: 0 0 8px rgba(0, 59, 122, 0.07) !important;
+}
+
+.footer-dnu-link {
+  text-shadow: 0 0 8px rgba(243, 112, 33, 0.10), 0 0 16px rgba(243, 112, 33, 0.07) !important;
+}
+
+.footer-center {
+  text-shadow: 0 0 8px rgba(15, 23, 42, 0.07) !important;
+}
+
+.slide-counter {
+  box-shadow: 0 0 12px rgba(0, 59, 122, 0.07) !important;
+  text-shadow: 0 0 8px rgba(0, 59, 122, 0.07) !important;
+}
+
+.slide-counter .current-num {
+  text-shadow: 0 0 10px rgba(243, 112, 33, 0.15), 0 0 18px rgba(243, 112, 33, 0.07) !important;
+}
+
+/* 3. TITLE & SUBTITLE GLOW (8%) + HIGH CONTRAST */
+.slide-title {
+  color: #003B7A !important;
+  text-shadow: 0 2px 14px rgba(0, 59, 122, 0.08), 0 0 22px rgba(243, 112, 33, 0.06) !important;
+}
+
+.slide-subtitle {
+  color: #334155 !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 8px rgba(0, 59, 122, 0.08) !important;
+}
+
+.slide-category {
+  text-shadow: 0 0 10px rgba(243, 112, 33, 0.15), 0 0 20px rgba(243, 112, 33, 0.08) !important;
+}
+
+/* Titles on Dark Theme Slides */
+.slide.theme-dark .slide-title,
+#slide-1 .slide-title,
+#slide-7 .slide-title,
+#slide-10 .slide-title {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 16px rgba(255, 255, 255, 0.15), 0 0 30px rgba(56, 189, 248, 0.12), 0 0 45px rgba(243, 112, 33, 0.08) !important;
+}
+
+.slide.theme-dark .slide-subtitle,
+#slide-1 .slide-subtitle,
+#slide-7 .slide-subtitle,
+#slide-10 .slide-subtitle {
+  color: #E2E8F0 !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.10), 0 0 20px rgba(56, 189, 248, 0.08) !important;
+}
+
+.slide.theme-dark .slide-category,
+#slide-7 .slide-category {
+  color: #38BDF8 !important;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.25), 0 0 24px rgba(56, 189, 248, 0.12) !important;
+}
+
+/* 4. CONTENT BOXES / TEXT HOLDERS 7% GLOW */
+.split-grid-card,
+.history-event-card,
+.slide-4-battle-card,
+.it-compare-card,
+.dnu-pillar-card,
+.quad-matrix-card,
+.strategic-col,
+.central-alert-banner,
+.split-cards-stack > div {
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05), 0 0 18px rgba(243, 112, 33, 0.07) !important;
+  border-color: rgba(226, 232, 240, 0.95) !important;
+}
+
+.split-grid-card:hover,
+.history-event-card:hover,
+.it-compare-card:hover,
+.dnu-pillar-card:hover {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08), 0 0 24px rgba(243, 112, 33, 0.12) !important;
+}
+
+.slide-photo-card {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), 0 0 22px rgba(0, 59, 122, 0.12), 0 0 35px rgba(243, 112, 33, 0.07) !important;
+}
+
+/* 5. TEXT ON DARK BACKGROUNDS 10% GLOW & HIGH CONTRAST */
+/* Slide 7 Specific Threat Cards */
+#slide-7 .split-card:nth-child(1) {
+  background: rgba(11, 25, 44, 0.78) !important;
+  border: 1.5px solid rgba(56, 189, 248, 0.35) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 20px rgba(56, 189, 248, 0.07) !important;
+}
+
+#slide-7 .split-card:nth-child(1) h4 {
+  color: #38BDF8 !important;
+  text-shadow: 0 0 14px rgba(56, 189, 248, 0.35), 0 0 28px rgba(56, 189, 248, 0.15) !important;
+}
+
+#slide-7 .split-card:nth-child(2) {
+  background: rgba(11, 25, 44, 0.78) !important;
+  border: 1.5px solid rgba(249, 115, 22, 0.35) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 20px rgba(249, 115, 22, 0.07) !important;
+}
+
+#slide-7 .split-card:nth-child(2) h4 {
+  color: #FB923C !important;
+  text-shadow: 0 0 14px rgba(251, 146, 60, 0.35), 0 0 28px rgba(251, 146, 60, 0.15) !important;
+}
+
+#slide-7 .split-card p {
+  color: #F8FAFC !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.10), 0 0 20px rgba(255, 255, 255, 0.05) !important;
+}
+
+#slide-7 .split-card p strong {
+  color: #F97316 !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 12px rgba(249, 115, 22, 0.45), 0 0 24px rgba(249, 115, 22, 0.15) !important;
+}
+
+/* Slide 7 domain pills & callout */
+.active-cyber {
+  box-shadow: 0 0 18px rgba(249, 115, 22, 0.25), 0 0 30px rgba(249, 115, 22, 0.10) !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.20) !important;
+}
+
+/* Photo card overlays text glow */
+.photo-overlay-title {
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.15), 0 0 24px rgba(243, 112, 33, 0.10) !important;
+}
+
+.photo-overlay-desc {
+  color: #F8FAFC !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.10) !important;
+}
+
+/* Slide 10 quote & cards */
+#slide-10 .quote-hero-card {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(243, 112, 33, 0.07) !important;
+}
+
+#slide-10 .quote-text {
+  text-shadow: 0 0 16px rgba(255, 255, 255, 0.20), 0 0 32px rgba(251, 146, 60, 0.15), 0 0 48px rgba(243, 112, 33, 0.08) !important;
+}
+
+#slide-10 .quote-author {
+  color: #FDBA74 !important;
+  text-shadow: 0 0 10px rgba(251, 146, 60, 0.20) !important;
+}
+
+#slide-10 .quad-matrix-card {
+  background: rgba(11, 25, 44, 0.70) !important;
+  border: 1.5px solid rgba(56, 189, 248, 0.25) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.40), 0 0 18px rgba(56, 189, 248, 0.07) !important;
+}
+
+#slide-10 .quad-matrix-card h4 {
+  text-shadow: 0 0 12px rgba(251, 146, 60, 0.25) !important;
+}
+
+#slide-10 .quad-matrix-card p {
+  color: #F8FAFC !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.10) !important;
+}
+
