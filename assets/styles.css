@@ -3191,37 +3191,46 @@ body.exporting-2k .slide-timer-badge {
    ELEGANT 7% - 10% GLOW & HIGH CONTRAST TYPOGRAPHY ENGINE
    ========================================================================== */
 
-/* 1. HEADER GLOW (7%) */
+/* 1. HEADER COLOR-MATCHED SHADOW & GLOW (1-1.5PX) */
 .brand-slogan {
-  text-shadow: 0 0 10px rgba(243, 112, 33, 0.12), 0 0 18px rgba(243, 112, 33, 0.07) !important;
+  color: var(--color-primary) !important;
+  text-shadow: 0 1px 2px rgba(234, 88, 12, 0.35), 0 0 10px rgba(234, 88, 12, 0.20) !important;
 }
 
 .header-topic-badge {
-  box-shadow: 0 0 14px rgba(0, 59, 122, 0.07) !important;
-  text-shadow: 0 0 8px rgba(0, 59, 122, 0.07) !important;
+  color: var(--color-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 59, 122, 0.28), 0 0 8px rgba(0, 59, 122, 0.15) !important;
+  box-shadow: 0 1.5px 5px rgba(0, 59, 122, 0.10), 0 0 12px rgba(0, 59, 122, 0.06) !important;
 }
 
-/* 2. FOOTER GLOW (7%) */
+/* 2. FOOTER COLOR-MATCHED SHADOW & GLOW (1-1.5PX) */
 .footer-timer-display {
-  box-shadow: 0 0 12px rgba(0, 59, 122, 0.07) !important;
-  text-shadow: 0 0 8px rgba(0, 59, 122, 0.07) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.25), 0 0 10px rgba(255, 255, 255, 0.10) !important;
 }
 
 .footer-dnu-link {
-  text-shadow: 0 0 8px rgba(243, 112, 33, 0.10), 0 0 16px rgba(243, 112, 33, 0.07) !important;
+  color: #FB923C !important;
+  text-shadow: 0 1px 2px rgba(251, 146, 60, 0.40), 0 0 10px rgba(251, 146, 60, 0.25) !important;
+}
+
+.footer-meta-pill {
+  color: #FB923C !important;
+  text-shadow: 0 1px 2px rgba(251, 146, 60, 0.40), 0 0 10px rgba(251, 146, 60, 0.25) !important;
 }
 
 .footer-center {
-  text-shadow: 0 0 8px rgba(15, 23, 42, 0.07) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 255, 255, 0.18) !important;
 }
 
 .slide-counter {
-  box-shadow: 0 0 12px rgba(0, 59, 122, 0.07) !important;
-  text-shadow: 0 0 8px rgba(0, 59, 122, 0.07) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.25), 0 0 10px rgba(255, 255, 255, 0.10) !important;
 }
 
 .slide-counter .current-num {
-  text-shadow: 0 0 10px rgba(243, 112, 33, 0.15), 0 0 18px rgba(243, 112, 33, 0.07) !important;
+  color: #FB923C !important;
+  text-shadow: 0 1px 2px rgba(251, 146, 60, 0.45), 0 0 12px rgba(251, 146, 60, 0.30) !important;
 }
 
 /* 3. TITLE & SUBTITLE COLOR-MATCHED SHADOW (1-1.5PX) & GLOW */
