@@ -4,3 +4,7 @@ __pycache__/
 .user_uploaded/
 .DS_Store
 Thumbs.db
+review_slides/
+review_slides_v2/
+live_page.png
+slide7_modal_test.png

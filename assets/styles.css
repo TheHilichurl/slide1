@@ -1842,130 +1842,162 @@ html, body {
    ========================================================================== */
 #hud-controls {
   position: fixed;
-  bottom: 24px;
+  bottom: 14px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 8px 22px;
+  gap: 8px;
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 6px 18px;
   border-radius: var(--radius-full);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
   z-index: 999;
-  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  opacity: 0.92;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
 }
 
+#hud-controls:hover {
+  opacity: 1;
+}
+
+#hud-controls.hidden,
 #hud-controls.hidden-hud {
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, 20px);
-  pointer-events: none;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translate(-50%, 25px) !important;
+  pointer-events: none !important;
 }
 
 .hud-btn {
-  background: transparent;
-  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   color: #F8FAFC;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s;
-  font-size: 16px;
+  font-size: 15px;
+  flex-shrink: 0;
 }
 
 .hud-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.22);
   color: #FFFFFF;
-  transform: scale(1.08);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
 }
 
 .hud-btn:active {
-  transform: scale(0.95);
+  transform: translateY(0) scale(0.96);
 }
 
 .hud-btn.primary {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary), #FB923C);
   color: #FFFFFF;
+  border: none;
   box-shadow: 0 4px 14px rgba(234, 88, 12, 0.45);
 }
 
 .hud-btn.primary:hover {
-  background: var(--color-primary-light);
+  background: linear-gradient(135deg, #FB923C, #F97316);
+  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.6);
 }
 
 .hud-btn.text-btn {
   width: auto;
+  min-width: fit-content;
+  white-space: nowrap;
   padding: 0 16px;
+  height: 38px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
   gap: 8px;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 14px;
 }
 
+.hud-btn.text-btn span {
+  white-space: nowrap;
+  line-height: 1;
+}
+
 .hud-divider {
   width: 1px;
-  height: 24px;
+  height: 22px;
   background: rgba(255, 255, 255, 0.2);
-  margin: 0 4px;
+  margin: 0 3px;
+  flex-shrink: 0;
 }
 
 .hud-slide-select {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.12);
   color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: var(--radius-full);
-  padding: 8px 16px;
-  font-size: 15px;
+  padding: 0 16px;
+  height: 38px;
+  font-size: 14px;
   font-weight: 700;
   outline: none;
   cursor: pointer;
   font-family: var(--font-heading);
+  max-width: 320px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .hud-slide-select option {
   background: #0F172A;
   color: #FFFFFF;
+  padding: 8px 12px;
 }
 
 .hud-timer-badge {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 14px;
-  background: rgba(255, 255, 255, 0.12);
+  padding: 0 14px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-full);
   color: #38BDF8;
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 15px;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
-/* Toast Notification */
+/* Toast Notification (Repositioned to bottom-right to protect Dai Nam Logo) */
 #toast-notification {
   position: fixed;
-  top: 24px;
+  bottom: 76px;
   right: 24px;
   background: rgba(15, 23, 42, 0.96);
   color: #FFFFFF;
   border-left: 5px solid var(--color-primary);
-  padding: 16px 24px;
+  padding: 14px 22px;
   border-radius: var(--radius-md);
   font-weight: 700;
-  font-size: 16px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  font-size: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   z-index: 2000;
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(20px);
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -2581,10 +2613,395 @@ html, body {
   line-height: 1.35;
 }
 
-.it-body-bullets li {
+/* ==========================================================================
+   UNIVERSAL SPLIT LAYOUT & PHOTO CARD ENGINE
+   ========================================================================== */
+.slide-split-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  height: 100%;
+}
+
+.slide-split-grid.reverse {
+  grid-template-columns: 0.85fr 1.15fr;
+}
+
+.slide-split-grid.equal {
+  grid-template-columns: 1fr 1fr;
+}
+
+.slide-photo-card {
+  position: relative;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  background: #0B192C;
+}
+
+.slide-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.slide-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48%, rgba(6, 17, 34, 0.88) 82%, rgba(6, 17, 34, 0.98) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 28px;
+  color: #FFFFFF;
+}
+
+.photo-overlay-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--color-primary), #FB923C);
+  color: #FFFFFF;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+}
+
+.photo-overlay-title {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.photo-overlay-desc {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #CBD5E1;
+  font-weight: 500;
+}
+
+/* Compact scannable cards grid for split layout */
+.split-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.split-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  box-shadow: var(--shadow-sm);
   display: flex;
   align-items: flex-start;
+  gap: 14px;
+  transition: all 0.25s;
+  flex: 1;
+}
+
+.split-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.split-card-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--color-secondary-soft);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.split-card-content h4 {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.split-card-content p {
+  font-size: 19px;
+  color: #334155;
+  line-height: 1.35;
+}
+
+.split-card-content strong {
+  color: var(--color-primary-dark);
+}
+
+/* 2x2 Grid inside split layout */
+.split-2x2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  height: 100%;
+}
+
+.split-grid-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
   gap: 8px;
+  transition: all 0.25s;
+}
+
+.split-grid-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.split-grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.split-grid-header h4 {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.split-grid-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 19px;
+  color: #334155;
+  line-height: 1.4;
+}
+
+.split-grid-bullets li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.45;
+  font-size: 19px;
+  color: #334155;
+  text-align: left;
+}
+
+.split-grid-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+/* Dark Theme variants for split cards */
+.slide.theme-dark .split-card,
+.slide.theme-dark .split-grid-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #F8FAFC;
+}
+
+.slide.theme-dark .split-card-content h4,
+.slide.theme-dark .split-grid-header h4 {
+  color: #FFFFFF;
+}
+
+.slide.theme-dark .split-card-content p,
+.slide.theme-dark .split-grid-bullets {
+  color: #CBD5E1;
+}
+
+.slide.theme-dark .split-card-icon {
+  background: rgba(234, 88, 12, 0.2);
+  color: #FB923C;
+}
+
+/* Global Slide 7 Modal Styling (placed directly in body) */
+.slide-7-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 18, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.slide-7-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slide-7-modal-card {
+  width: 900px;
+  max-width: 92vw;
+  background: #0A192F;
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(56, 189, 248, 0.15);
+  padding: 32px 36px;
+  color: #FFFFFF;
+}
+
+.slide-7-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.slide-7-modal-header h3 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 800;
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slide-7-modal-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #FFFFFF;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.slide-7-modal-close:hover {
+  background: rgba(239, 68, 68, 0.8);
+}
+
+.slide-7-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.case-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-card h4 {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 800;
+  color: #38BDF8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.case-card p {
+  font-size: 16px;
+  color: #CBD5E1;
+  line-height: 1.45;
+}
+
+/* Interactive Q&A CTA button on Slide 10 */
+.btn-qa-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--color-primary), #F97316);
+  color: #FFFFFF;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  border: none;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 18px;
+  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.btn-qa-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(234, 88, 12, 0.6);
+}
+
+.btn-qa-cta:active {
+  transform: translateY(0);
+}
+
+/* Clean Button on Slide 7 for Modal trigger */
+.btn-slide-7-cases {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(13, 46, 92, 0.85);
+  border: 1.5px solid rgba(56, 189, 248, 0.5);
+  color: #38BDF8;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-slide-7-cases:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38BDF8;
+  color: #FFFFFF;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================

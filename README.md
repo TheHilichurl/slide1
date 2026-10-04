@@ -16,9 +16,9 @@
 Toàn bộ 10 slide đã được xuất bằng cơ chế **Canvas 2K QHD (2560 x 1440 px)**, tự động loại bỏ giao diện điều khiển web và đồng hồ bấm giờ, sẵn sàng cho việc trình chiếu hoặc in ấn:
 
 - 📊 **PowerPoint Presentation (16:9 Widescreen):**  
-  👉 **[Tải file PPTX (2K)](./Thuyet_Trinh_QPAN_DaiNam_2K.pptx)** *(~8.2 MB)*
+  👉 **[Tải file PPTX (2K)](./exports/Thuyet_Trinh_QPAN_DaiNam_2K.pptx)** *(~15.3 MB)*
 - 📄 **Tài liệu PDF Khổ ngang (16:9 Landscape):**  
-  👉 **[Tải file PDF (2K)](./Thuyet_Trinh_QPAN_DaiNam_2K.pdf)** *(~4.0 MB)*
+  👉 **[Tải file PDF (2K)](./exports/Thuyet_Trinh_QPAN_DaiNam_2K.pdf)** *(~3.7 MB)*
 
 ---
 

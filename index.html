@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GDQP-AN: Truyền Thống & Nghệ Thuật Đánh Giặc Của Ông Cha Ta | Đại Học Đại Nam</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261003_01">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261004_01">
 
   <!-- Google Fonts: Plus Jakarta Sans (Modern Headings) & Be Vietnam Pro (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,25 +22,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
   <!-- External Stylesheet with Cache-Buster -->
-  <link rel="stylesheet" href="assets/styles.css?v=20261003_01">
+  <link rel="stylesheet" href="assets/styles.css?v=20261004_02">
 </head>
 <body>
 
   <!-- Top Progress Indicator -->
   <div id="top-progress-bar"></div>
 
-  <!-- Toast Notification Container -->
+  <!-- Toast Notification Container (Positioned bottom-right to protect Dai Nam Logo) -->
   <div id="toast-notification">
-    <i data-lucide="check-circle" style="color: #10B981; width: 26px; height: 26px; flex-shrink: 0;"></i>
+    <i data-lucide="check-circle" style="color: #10B981; width: 24px; height: 24px; flex-shrink: 0;"></i>
     <span id="toast-msg">Thông báo hệ thống</span>
   </div>
 
-  <!-- Viewport Shell -->
+  <!-- Viewport Shell (Auto-Scaled 16:9 1920x1080) -->
   <div id="viewport">
     <div id="slide-stage">
 
       <!-- ====================================================================
-           SLIDE 1: COVER / HERO (HERO LAYOUT WITH CO LOA & BRONZE DRUM THEME)
+           SLIDE 1: COVER / HERO (HERO LAYOUT WITH CO LOA THEME)
            ==================================================================== -->
       <section class="slide theme-dark active" id="slide-1" data-slide-index="1">
         <!-- Mandatory Header -->
@@ -53,7 +53,6 @@
             </div>
           </div>
           <div class="header-right">
-            <!-- Official Dai Nam University Logo -->
             <img src="assets/dai-nam-logo-ngang.svg" alt="Trường Đại học Đại Nam" class="official-logo-img">
           </div>
         </header>
@@ -104,7 +103,7 @@
               </button>
             </div>
 
-            <!-- Hero Visual Graphic Card (Co Loa Citadel Panoramic) -->
+            <!-- Hero Visual Graphic Card -->
             <div class="hero-visual-card">
               <img src="assets/vn-co-loa.jpg" alt="Thành Cổ Loa & Tinh hoa Đánh giặc" class="hero-visual-img">
               <div class="hero-visual-overlay">
@@ -145,7 +144,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 2: BUỔI ĐẦU LỊCH SỬ & QUY LUẬT SINH TỒN (LAYOUT 2: DEFINITION & THEORY)
+           SLIDE 2: BUỔI ĐẦU LỊCH SỬ & QUY LUẬT SINH TỒN
            ==================================================================== -->
       <section class="slide" id="slide-2" data-slide-index="2">
         <header class="slide-header">
@@ -168,8 +167,8 @@
             <p class="slide-subtitle">Vị trí địa chiến lược hiểm yếu và bước nhảy vọt tư duy quốc phòng thời Văn Lang - Âu Lạc</p>
           </div>
 
-          <div class="slide-2-grid">
-            <!-- Left: Definition Box with Co Loa Citadel Photo -->
+          <div class="slide-split-grid">
+            <!-- Left: Definition Box with Co Loa Image & Quote -->
             <div class="definition-box">
               <div>
                 <div class="def-badge">
@@ -177,54 +176,54 @@
                   Quy luật sinh tồn tất yếu
                 </div>
                 <p class="def-quote-text">
-                  "<strong>Dựng nước luôn đi đôi với giữ nước</strong> - Quy luật tồn vong hàng nghìn năm. Muốn tồn tại để cày cấy, làm ăn thì <strong>bàn tay cầm cày cũng phải luôn sẵn sàng cầm gươm</strong> bảo vệ xóm làng."
+                  "<strong>Dựng nước đi đôi với giữ nước</strong> - Muốn tồn tại để cày cấy làm ăn thì <strong>tay cầm cày phải luôn sẵn sàng cầm gươm</strong> bảo vệ xóm làng."
                 </p>
 
                 <!-- Context Photo -->
                 <div class="def-img-preview">
-                  <img src="assets/vn-co-loa.jpg" alt="Kiến trúc Thành Cổ Loa" class="def-img-thumb">
+                  <img src="assets/vn-co-loa.jpg" alt="Kiến trúc Thành Cổ Loa" class="def-img-thumb" style="width: 320px; height: 190px;">
                   <div class="def-img-caption">
-                    <h5>Kiến trúc phòng thủ Thành Cổ Loa</h5>
-                    <p>Quy mô 3 vòng xoắn ốc (Nội, Trung, Ngoại) kết hợp hào nước sông Hoàng Giang, tối ưu cho cả thủy binh và bộ binh.</p>
+                    <h5 style="font-size: 24px;">Kiến trúc Thành Cổ Loa</h5>
+                    <p style="font-size: 19px;">3 vòng xoáy ốc (Nội, Trung, Ngoại) kết hợp hào sông Hoàng Giang, tối ưu phòng ngự thủy - bộ liên hoàn.</p>
                   </div>
                 </div>
               </div>
 
-              <div class="def-summary-pill">
-                <i data-lucide="zap" style="color: var(--color-primary); width: 28px; height: 28px; flex-shrink: 0;"></i>
+              <div class="def-summary-pill" style="font-size: 19px;">
+                <i data-lucide="zap" style="color: var(--color-primary); width: 24px; height: 24px; flex-shrink: 0;"></i>
                 <span>Đột phá: <strong>Nỏ thần Liên Châu</strong> bắn vạn mũi tên đồng Cầu Vực — bước nhảy vọt hỏa lực tầm xa.</span>
               </div>
             </div>
 
-            <!-- Right: 3 Core Evolution Cards -->
+            <!-- Right: 3 Core Evolution Cards (Concise, punchy) -->
             <div class="characteristics-stack">
               <div class="char-card">
                 <div class="char-icon-wrap">
-                  <i data-lucide="map-pin" style="width: 30px; height: 30px;"></i>
+                  <i data-lucide="map-pin" style="width: 28px; height: 28px;"></i>
                 </div>
                 <div class="char-info">
                   <h4>1. Vị Trí Địa Chiến Lược Huyết Mạch</h4>
-                  <p>Nằm ở ngã tư giao lưu hàng hải Đông Nam Á, là "bàn đạp" bành trướng xuống phương Nam của các triều đại phong kiến phương Bắc.</p>
+                  <p>Cửa ngõ Đông Nam Á, ngã tư giao lưu hàng hải; là mục tiêu bành trướng thường trực của phong kiến phương Bắc.</p>
                 </div>
               </div>
 
               <div class="char-card">
                 <div class="char-icon-wrap">
-                  <i data-lucide="droplets" style="width: 30px; height: 30px;"></i>
+                  <i data-lucide="droplets" style="width: 28px; height: 28px;"></i>
                 </div>
                 <div class="char-info">
-                  <h4>2. Thời Kỳ Văn Lang: Trị Thủy & Đúc Đồng</h4>
-                  <p>Kinh tế lúa nước, văn hóa Đông Sơn đỉnh cao. Sự cố kết tự nhiên của làng/chạ để chống thú dữ, khai hoang và làm thủy lợi.</p>
+                  <h4>2. Văn Lang: Trị Thủy & Đúc Đồng</h4>
+                  <p>Kinh tế lúa nước, văn hóa Đông Sơn rực rỡ; cố kết làng chạ tự nhiên để đắp đê, chống thú dữ và bảo vệ xóm làng.</p>
                 </div>
               </div>
 
               <div class="char-card">
                 <div class="char-icon-wrap">
-                  <i data-lucide="shield-alert" style="width: 30px; height: 30px;"></i>
+                  <i data-lucide="shield-alert" style="width: 28px; height: 28px;"></i>
                 </div>
                 <div class="char-info">
-                  <h4>3. Âu Lạc: Bước Nhảy Vọt Về Quốc Phòng</h4>
-                  <p>Dời đô về Cổ Loa, xây dựng công trình thành lũy quân sự khép kín kết hợp công nghệ vũ khí cơ học Nỏ Liên Châu uy lực.</p>
+                  <h4>3. Âu Lạc: Đột Phá Quốc Phòng Toàn Diện</h4>
+                  <p>Dời đô Cổ Loa, xây dựng công trình thành lũy quân sự khép kín kết hợp kỹ nghệ vũ khí cơ học uy lực tối tân.</p>
                 </div>
               </div>
             </div>
@@ -242,7 +241,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 3: 4 YẾU TỐ HÌNH THÀNH NGHỆ THUẬT QUÂN SỰ (LAYOUT 3: FOUR PILLARS GRID)
+           SLIDE 3: 4 YẾU TỐ HÌNH THÀNH NGHỆ THUẬT QUÂN SỰ (SPLIT WITH TERRAIN PHOTO)
            ==================================================================== -->
       <section class="slide" id="slide-3" data-slide-index="3">
         <header class="slide-header">
@@ -259,89 +258,74 @@
           <div class="slide-title-wrap">
             <span class="slide-category"><i data-lucide="layers" style="width: 18px; height: 18px;"></i>Cơ sở hình thành nghệ thuật quân sự</span>
             <h2 class="slide-title">4 YẾU TỐ NỀN TẢNG HÌNH THÀNH BẢN SẮC ĐÁNH GIẶC</h2>
-            <p class="slide-subtitle">Địa lý, kinh tế, văn hóa và tương quan lực lượng định hình nghệ thuật tác chiến độc đáo của dân tộc</p>
+            <p class="slide-subtitle">Địa lý, kinh tế, văn hóa và tương quan lực lượng định hình nghệ thuật tác chiến độc đáo</p>
           </div>
 
-          <div class="slide-3-wrap">
-            <div class="slide-3-grid">
-              <!-- Pillar 1: Địa lý -->
-              <div class="grid-pillar-card" style="border-top-color: #DC2626;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #DC2626; background: #FEE2E2;">
-                        <i data-lucide="mountain" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">1. Địa lý & Địa hình</h3>
-                    </div>
-                    <span class="pillar-tag tag-red">Hiểm Địa</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>3/4 đồi núi rừng rậm, sông ngòi đầm lầy chằng chịt, khí hậu nhiệt đới gió mùa.</span></li>
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Vô hiệu hóa sở trường kỵ binh cơ động và đội hình dàn trận lớn của giặc.</span></li>
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Buộc phát triển nghệ thuật phục kích, giấu quân hiểm địa và thủy chiến bậc thầy.</span></li>
-                  </ul>
+          <div class="slide-split-grid">
+            <!-- Left: 4 Factor Cards (2x2 Grid) -->
+            <div class="split-2x2-grid">
+              <!-- Pillar 1 -->
+              <div class="split-grid-card" style="border-top: 5px solid #DC2626;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="mountain" style="color: #DC2626; width: 22px; height: 22px;"></i>1. Địa Lý & Địa Hình</h4>
+                  <span class="pillar-tag tag-red">Hiểm Địa</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>3/4 đồi núi rừng rậm, sông ngòi đầm lầy chằng chịt.</li>
+                  <li>Bẻ gãy kỵ binh cơ động, triệt tiêu đội hình lớn của giặc.</li>
+                  <li>Phát triển sở trường <strong>phục kích & thủy chiến bậc thầy</strong>.</li>
+                </ul>
               </div>
 
-              <!-- Pillar 2: Kinh tế - Ngụ binh ư nông -->
-              <div class="grid-pillar-card" style="border-top-color: #0284C7;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #0284C7; background: #E0F2FE;">
-                        <i data-lucide="wheat" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">2. Ngụ Binh Ư Nông</h3>
-                    </div>
-                    <span class="pillar-tag tag-blue">Quốc Sách</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Nông nghiệp tự cung tự cấp, ngân khố không thể nuôi quân thường trực khổng lồ.</span></li>
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Thời bình luân phiên về cày cấy, giảm gánh nặng ngân khố, làm giàu đất nước.</span></li>
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Thời chiến có lệnh là tập hợp thần tốc, nông dân lập tức thành người lính tinh nhuệ.</span></li>
-                  </ul>
+              <!-- Pillar 2 -->
+              <div class="split-grid-card" style="border-top: 5px solid #0284C7;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="wheat" style="color: #0284C7; width: 22px; height: 22px;"></i>2. Ngụ Binh Ư Nông</h4>
+                  <span class="pillar-tag tag-blue">Quốc Sách</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>Gửi binh lính vào nông dân, giảm gánh nặng ngân khố.</li>
+                  <li>Thời bình làm giàu đất nước, rèn luyện nông cụ.</li>
+                  <li>Thời chiến có lệnh: <strong>toàn dân thần tốc hóa chiến binh</strong>.</li>
+                </ul>
               </div>
 
-              <!-- Pillar 3: Văn hóa - Đại đoàn kết -->
-              <div class="grid-pillar-card" style="border-top-color: #EA580C;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #EA580C; background: #FFEDD5;">
-                        <i data-lucide="users" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">3. Khối Đại Đoàn Kết</h3>
-                    </div>
-                    <span class="pillar-tag tag-orange">Lòng Dân</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Từ đắp đê trị thủy đến chống ngoại xâm đã hình thành làng xã gắn kết keo sơn.</span></li>
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Lòng yêu nước nồng nàn, ý chí tự chủ, lòng tự tôn dân tộc cao độ.</span></li>
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Quốc gia nguy biến: Gác lại mâu thuẫn nội bộ tạo thành "Thế trận lòng dân" vững chắc.</span></li>
-                  </ul>
+              <!-- Pillar 3 -->
+              <div class="split-grid-card" style="border-top: 5px solid #EA580C;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="users" style="color: #EA580C; width: 22px; height: 22px;"></i>3. Khối Đại Đoàn Kết</h4>
+                  <span class="pillar-tag tag-orange">Lòng Dân</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>Cố kết keo sơn từ công cuộc đắp đê trị thủy ngàn đời.</li>
+                  <li>Lòng yêu nước nồng nàn, ý thức độc lập tự chủ cao độ.</li>
+                  <li>Quốc biến: tạo dựng <strong>"Thế trận lòng dân"</strong> bất khả xâm phạm.</li>
+                </ul>
               </div>
 
-              <!-- Pillar 4: Tương quan bất đối xứng -->
-              <div class="grid-pillar-card" style="border-top-color: #7C3AED;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #7C3AED; background: #F3E8FF;">
-                        <i data-lucide="scale" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">4. Tác Chiến Bất Đối Xứng</h3>
-                    </div>
-                    <span class="pillar-tag tag-purple">Bù Đắp</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Thực tế: Nước nhỏ chống nước lớn, quân ta ít chống giặc đông, khí tài giặc vượt trội.</span></li>
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Không đối đầu trực diện "đọ quân tiêu hao", mà khoét sâu điểm yếu hậu cần và sĩ khí địch.</span></li>
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Phương châm: "Lấy ít địch nhiều, lấy nhỏ thắng lớn, dĩ đoản binh chế trường trận".</span></li>
-                  </ul>
+              <!-- Pillar 4 -->
+              <div class="split-grid-card" style="border-top: 5px solid #7C3AED;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="scale" style="color: #7C3AED; width: 22px; height: 22px;"></i>4. Bất Đối Xứng</h4>
+                  <span class="pillar-tag tag-purple">Bù Đắp</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>Nước nhỏ chống nước lớn, quân ta ít chống giặc đông.</li>
+                  <li>Tránh đọ quân tiêu hao; đánh vào hậu cần, sĩ khí địch.</li>
+                  <li>Phương châm: <strong>"Lấy ít địch nhiều, dĩ đoản chế trường"</strong>.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right: Beautiful Visual Photo Card -->
+            <div class="slide-photo-card">
+              <img src="assets/vn-terrain.jpg" alt="Địa thế hiểm trở non sông Việt Nam" class="slide-photo-img">
+              <div class="slide-photo-overlay">
+                <div class="photo-overlay-badge">
+                  <i data-lucide="map" style="width: 14px; height: 14px;"></i> ĐỊA LỢI & THẾ TRẬN NON SÔNG
+                </div>
+                <h3 class="photo-overlay-title">Địa Hình Hiểm Trở & Bản Sắc Giữ Nước</h3>
+                <p class="photo-overlay-desc">Rừng rậm, sông ngòi và lũy tre làng hóa thành pháo đài tự nhiên, vô hiệu hóa hoàn toàn sức mạnh kỵ binh ngoại bang.</p>
               </div>
             </div>
           </div>
@@ -358,7 +342,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 4: CHỐNG BẮC THUỘC & BẠCH ĐẰNG 938 (LAYOUT 4: HISTORICAL SPLIT)
+           SLIDE 4: CHỐNG BẮC THUỘC & BẠCH ĐẰNG 938
            ==================================================================== -->
       <section class="slide" id="slide-4" data-slide-index="4">
         <header class="slide-header">
@@ -386,7 +370,7 @@
                   <h4><i data-lucide="shield" style="width: 22px; height: 22px;"></i>Hai Bà Trưng (Năm 40)</h4>
                   <span class="history-time-badge">Mở Đầu Tự Chủ</span>
                 </div>
-                <p>Tiếng súng mở màn đập tan ách thống trị của nhà Hán; khẳng định tinh thần quật khởi và sức mạnh kiên cường của người phụ nữ Việt Nam.</p>
+                <p>Khởi nghĩa quật khởi đập tan ách đô hộ nhà Hán; khẳng định tinh thần tự chủ bất diệt của dân tộc.</p>
               </div>
 
               <div class="history-event-card">
@@ -394,8 +378,7 @@
                   <h4><i data-lucide="flag" style="width: 22px; height: 22px;"></i>Bà Triệu (248) & Vạn Xuân (542)</h4>
                   <span class="history-time-badge">Xưng Đế Độc Lập</span>
                 </div>
-                <p>Bà Triệu cưỡi voi đánh giặc; Lý Bí khởi nghĩa thành lập nhà nước Vạn Xuân — khẳng định chủ quyền độc lập sánh ngang các hoàng đế phương Bắc.</p>
-                <cite>"Tôi muốn cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá kình ở biển Đông..."</cite>
+                <p>Bà Triệu cưỡi voi đánh giặc; Lý Bí thành lập nhà nước Vạn Xuân — khẳng định chủ quyền độc lập sánh ngang phương Bắc.</p>
               </div>
 
               <div class="history-event-card">
@@ -403,7 +386,7 @@
                   <h4><i data-lucide="sword" style="width: 22px; height: 22px;"></i>Mai Thúc Loan & Phùng Hưng</h4>
                   <span class="history-time-badge">Thế Kỷ VIII</span>
                 </div>
-                <p>Các phong trào quật khởi nông dân bền bỉ (722 - 791) làm lung lay tận gốc ách thống trị đô hộ hà khắc của nhà Đường.</p>
+                <p>Các cuộc quật khởi nông dân bền bỉ (722 - 791) làm lung lay tận gốc ách thống trị đô hộ hà khắc của nhà Đường.</p>
               </div>
             </div>
 
@@ -421,16 +404,16 @@
               <div class="battle-card-content">
                 <ul class="battle-tactics-list">
                   <li>
-                    <i data-lucide="check-circle" style="color: var(--color-primary); width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px;"></i>
-                    <span><strong>Nắm chắc quy luật thủy triều:</strong> Đo lường chính xác chu kỳ con nước dâng - rút để chọn thời khắc phản công dứt điểm.</span>
+                    <i data-lucide="check-circle" style="color: var(--color-primary); width: 22px; height: 22px; flex-shrink: 0;"></i>
+                    <span><strong>Nắm chắc thủy triều:</strong> Đo lường chu kỳ con nước để nhử giặc và phản công dứt điểm.</span>
                   </li>
                   <li>
-                    <i data-lucide="check-circle" style="color: var(--color-primary); width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px;"></i>
-                    <span><strong>Trận địa cọc nhọn bọc sắt:</strong> Đóng bãi cọc ngầm hiểm hóc dưới lòng sông, biến cửa biển thành mồ chôn chiến thuyền giặc.</span>
+                    <i data-lucide="check-circle" style="color: var(--color-primary); width: 22px; height: 22px; flex-shrink: 0;"></i>
+                    <span><strong>Trận địa cọc nhọn bọc sắt:</strong> Đóng bãi cọc ngầm hiểm hóc, biến sông thành mồ chôn thuyền giặc.</span>
                   </li>
                   <li>
-                    <i data-lucide="check-circle" style="color: var(--color-primary); width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px;"></i>
-                    <span><strong>Mở ra kỷ nguyên độc lập tự chủ lâu dài:</strong> Tiêu diệt toàn bộ thủy quân Hoằng Thao (Nam Hán), chấm dứt vĩnh viễn hơn 1000 năm Bắc thuộc.</span>
+                    <i data-lucide="check-circle" style="color: var(--color-primary); width: 22px; height: 22px; flex-shrink: 0;"></i>
+                    <span><strong>Chấm dứt 1.000 năm Bắc thuộc:</strong> Tiêu diệt thủy quân Hoằng Thao, mở ra kỷ nguyên độc lập muôn đời.</span>
                   </li>
                 </ul>
               </div>
@@ -439,9 +422,9 @@
 
           <!-- Bottom Alert Banner -->
           <div class="central-alert-banner">
-            <i data-lucide="award" style="width: 30px; height: 30px; color: #FBBF24; flex-shrink: 0;"></i>
+            <i data-lucide="award" style="width: 26px; height: 26px; color: #FBBF24; flex-shrink: 0;"></i>
             <p>
-              <strong>BÀI HỌC VÀNG:</strong> Nắm chắc thiên thời (thủy triều), tận dụng địa lợi (lòng sông Bạch Đằng) và phát huy nhân hòa để lấy đoản binh chế trường trận!
+              <strong>BÀI HỌC VÀNG:</strong> Nắm chắc thiên thời (thủy triều), địa lợi (sông ngòi) và nhân hòa để lấy đoản binh chế trường trận!
             </p>
           </div>
         </div>
@@ -457,7 +440,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 5: ĐỘC LẬP TỰ CHỦ PHONG KIẾN (LAYOUT 5: SEQUENTIAL CAMPAIGNS)
+           SLIDE 5: ĐỘC LẬP TỰ CHỦ PHONG KIẾN (SPLIT WITH DIEN HONG PHOTO)
            ==================================================================== -->
       <section class="slide" id="slide-5" data-slide-index="5">
         <header class="slide-header">
@@ -474,100 +457,74 @@
           <div class="slide-title-wrap">
             <span class="slide-category"><i data-lucide="shield" style="width: 18px; height: 18px;"></i>Thời kỳ độc lập phong kiến</span>
             <h2 class="slide-title">CÁC CHIẾN DỊCH QUYẾT CHIẾN CHIẾN LƯỢC MẪU MỰC</h2>
-            <p class="slide-subtitle">Nghệ thuật quân sự đỉnh cao qua các triều đại Tiền Lê, Lý, Trần, Hậu Lê và Tây Sơn</p>
+            <p class="slide-subtitle">Nghệ thuật quân sự đỉnh cao qua các triều đại Lý, Trần, Hậu Lê và Tây Sơn</p>
           </div>
 
-          <div class="slide-3-wrap" style="height: calc(100% - 100px);">
-            <div class="slide-3-grid">
-              <!-- Campaign 1: Tiền Lê -->
-              <div class="grid-pillar-card" style="border-top-color: #0284C7;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #0284C7; background: #E0F2FE;">
-                        <i data-lucide="shield" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">1. Tiền Lê (981)</h3>
-                    </div>
-                    <span class="pillar-tag tag-blue">Chống Tống</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Lê Hoàn chỉ huy quyết liệt trên cả mặt trận thủy và bộ.</span></li>
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Chém tướng Hầu Nhân Bảo trên sông Bạch Đằng, bắt sống tướng giặc.</span></li>
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Bảo vệ vững chắc nền độc lập non trẻ của nhà nước Đại Cồ Việt.</span></li>
-                  </ul>
+          <div class="slide-split-grid reverse">
+            <!-- Left: Visual Photo Card with Dien Hong Painting -->
+            <div class="slide-photo-card">
+              <img src="assets/vn-dien-hong.jpg" alt="Hội nghị Diên Hồng & Hào khí Đông A" class="slide-photo-img">
+              <div class="slide-photo-overlay">
+                <div class="photo-overlay-badge">
+                  <i data-lucide="crown" style="width: 14px; height: 14px;"></i> HÀO KHÍ ĐÔNG A & DIÊN HỒNG
                 </div>
-              </div>
-
-              <!-- Campaign 2: Thời Lý -->
-              <div class="grid-pillar-card" style="border-top-color: #EA580C;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #EA580C; background: #FFEDD5;">
-                        <i data-lucide="zap" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">2. Thời Lý (1075 - 1077)</h3>
-                    </div>
-                    <span class="pillar-tag tag-orange">Như Nguyệt</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span><strong>"Tiên phát chế nhân":</strong> Đem quân tập kích Ung Châu chặn mũi nhọn giặc.</span></li>
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Phòng tuyến sông Như Nguyệt hiểm trở bẻ gãy ý chí quân Tống.</span></li>
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Đòn tâm lý chiến thần kỳ với bài thơ <em>"Nam quốc sơn hà"</em>.</span></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Campaign 3: Thời Trần -->
-              <div class="grid-pillar-card" style="border-top-color: #DC2626;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #DC2626; background: #FEE2E2;">
-                        <i data-lucide="flame" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">3. Thời Trần (1258 - 1288)</h3>
-                    </div>
-                    <span class="pillar-tag tag-red">3 Lần Thắng Nguyên</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Chiến lược <strong>"Thanh dã" (Vườn không nhà trống)</strong> triệt phá nguồn lương thảo địch.</span></li>
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Hội nghị Bình Than, Hội nghị Diên Hồng toàn dân muôn người hô <em>"ĐÁNH!"</em>.</span></li>
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Đại thắng Bạch Đằng 1288 của Trần Hưng Đạo bắt sống Ô Mã Nhi.</span></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Campaign 4: Lam Sơn & Tây Sơn -->
-              <div class="grid-pillar-card" style="border-top-color: #7C3AED;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #7C3AED; background: #F3E8FF;">
-                        <i data-lucide="sword" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">4. Lam Sơn & Tây Sơn</h3>
-                    </div>
-                    <span class="pillar-tag tag-purple">Thần Tốc</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span><strong>Lam Sơn (1407 - 1427):</strong> Du kích Chí Linh đến quyết chiến Chi Lăng diệt viện binh.</span></li>
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span><strong>Quang Trung (1789):</strong> Hành quân thần tốc Phú Xuân ra Thăng Long dịp Tết Kỷ Dậu.</span></li>
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Đánh tan 29 vạn quân Thanh tại Ngọc Hồi - Đống Đa bằng lối đánh táo bạo, bất ngờ.</span></li>
-                  </ul>
-                </div>
+                <h3 class="photo-overlay-title">Hội Nghị Diên Hồng & Sức Mạnh Toàn Dân</h3>
+                <p class="photo-overlay-desc">"Vua tôi đồng lòng, anh em hòa mục, cả nước góp sức, giặc tự nhiên tan" — Tinh hoa quân sự bất khả chiến bại nằm ở Lòng Dân.</p>
               </div>
             </div>
 
-            <!-- Dialectic Synthesis Box with Dien Hong Painting Reference -->
-            <div class="dialectic-synthesis-box">
-              <div class="synthesis-icon">
-                <i data-lucide="crown" style="width: 28px; height: 28px;"></i>
+            <!-- Right: 4 Triều Đại Cards (2x2 Grid) -->
+            <div class="split-2x2-grid">
+              <!-- Dynasty 1: Lý -->
+              <div class="split-grid-card" style="border-top: 5px solid #EA580C;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="zap" style="color: #EA580C; width: 22px; height: 22px;"></i>1. Thời Lý (1075 - 1077)</h4>
+                  <span class="pillar-tag tag-orange">Như Nguyệt</span>
+                </div>
+                <ul class="split-grid-bullets">
+                  <li><strong>"Tiên phát chế nhân":</strong> Đánh đòn phủ đầu phá căn cứ Ung Châu của quân Tống.</li>
+                  <li>Phòng tuyến sông Như Nguyệt hiểm trở bẻ gãy ý chí xâm lược.</li>
+                  <li>Tâm lý chiến thần kỳ với bài thơ <em>"Nam quốc sơn hà"</em>.</li>
+                </ul>
               </div>
-              <div class="synthesis-text">
-                <h4>Hội Nghị Diên Hồng & Lời Dạy Hưng Đạo Đại Vương Trần Quốc Tuấn:</h4>
-                <p>"Vua tôi đồng lòng, anh em hòa mục, cả nước góp sức, giặc tự nhiên tan" — Sức mạnh quân sự vô địch nằm sâu trong lòng dân!</p>
+
+              <!-- Dynasty 2: Trần -->
+              <div class="split-grid-card" style="border-top: 5px solid #DC2626;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="flame" style="color: #DC2626; width: 22px; height: 22px;"></i>2. Thời Trần (1258 - 1288)</h4>
+                  <span class="pillar-tag tag-red">3 Lần Thắng Nguyên</span>
+                </div>
+                <ul class="split-grid-bullets">
+                  <li>Chiến lược <strong>"Vườn không nhà trống"</strong> triệt tiêu lương thảo giặc.</li>
+                  <li>Hội nghị Diên Hồng: Toàn dân muôn người đồng thanh hô <em>"ĐÁNH!"</em>.</li>
+                  <li>Đại thắng Bạch Đằng 1288 chôn vùi đạo quân xâm lược Mông Cổ.</li>
+                </ul>
+              </div>
+
+              <!-- Dynasty 3: Lê -->
+              <div class="split-grid-card" style="border-top: 5px solid #0284C7;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="sword" style="color: #0284C7; width: 22px; height: 22px;"></i>3. Khởi Nghĩa Lam Sơn</h4>
+                  <span class="pillar-tag tag-blue">Đại Nghĩa</span>
+                </div>
+                <ul class="split-grid-bullets">
+                  <li>Nguyễn Trãi: <em>"Đem đại nghĩa thắng hung tàn, lấy chí nhân thay cường bạo"</em>.</li>
+                  <li>Chiến thuật vây thành diệt viện, đánh vào lòng người (Tâm công).</li>
+                  <li>Cấp ngựa thuyền cho giặc rút quân, giữ hòa bình lâu dài.</li>
+                </ul>
+              </div>
+
+              <!-- Dynasty 4: Tây Sơn -->
+              <div class="split-grid-card" style="border-top: 5px solid #7C3AED;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="rocket" style="color: #7C3AED; width: 22px; height: 22px;"></i>4. Quang Trung (1789)</h4>
+                  <span class="pillar-tag tag-purple">Thần Tốc</span>
+                </div>
+                <ul class="split-grid-bullets">
+                  <li>Hành quân thần tốc từ Phú Xuân ra Thăng Long dịp Tết Kỷ Dậu.</li>
+                  <li>Đại phá 29 vạn quân Mãn Thanh tại Ngọc Hồi - Đống Đa trong 5 ngày.</li>
+                  <li>Nghệ thuật tác chiến cơ động bất ngờ, chớp nhoáng đỉnh cao.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -584,7 +541,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 6: 4 TRỤ CỘT TINH HOA NGHỆ THUẬT QUÂN SỰ (LAYOUT 3/4 ENHANCED)
+           SLIDE 6: 4 TRỤ CỘT TINH HOA NGHỆ THUẬT QUÂN SỰ (SPLIT WITH DOCTRINE PHOTO)
            ==================================================================== -->
       <section class="slide" id="slide-6" data-slide-index="6">
         <header class="slide-header">
@@ -601,89 +558,74 @@
           <div class="slide-title-wrap">
             <span class="slide-category"><i data-lucide="award" style="width: 18px; height: 18px;"></i>Binh pháp đỉnh cao</span>
             <h2 class="slide-title">4 TRỤ CỘT TINH HOA TRONG NGHỆ THUẬT ĐÁNH GIẶC</h2>
-            <p class="slide-subtitle">Hệ tư tưởng và nguyên lý tác chiến giúp dân tộc ta chiến thắng các đế chế hùng mạnh nhất</p>
+            <p class="slide-subtitle">Hệ tư tưởng và nguyên lý tác chiến giúp dân tộc ta chiến thắng các đế chế hùng mạnh</p>
           </div>
 
-          <div class="slide-3-wrap">
-            <div class="slide-3-grid">
-              <!-- Pillar 1: Tiến công tích cực -->
-              <div class="grid-pillar-card" style="border-top-color: #DC2626;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #DC2626; background: #FEE2E2;">
-                        <i data-lucide="target" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">1. Tiến Công Tích Cực</h3>
-                    </div>
-                    <span class="pillar-tag tag-red">Tư Tưởng</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Không phòng ngự thụ động chờ địch đánh, liên tục quấy rối, triệt phá đường tiếp tế.</span></li>
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Chủ động "Tiên phát chế nhân" tập kích phủ đầu căn cứ hậu cần chuẩn bị của địch.</span></li>
-                    <li><span class="bullet-dot" style="background: #DC2626;"></span><span>Lui binh chiến lược: "Tránh mũi nhọn lúc giặc hăng, chờ giặc mệt mỏi suy vi mới đánh".</span></li>
-                  </ul>
+          <div class="slide-split-grid">
+            <!-- Left: 4 Pillar Cards (2x2 Grid) -->
+            <div class="split-2x2-grid">
+              <!-- Pillar 1 -->
+              <div class="split-grid-card" style="border-top: 5px solid #DC2626;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="target" style="color: #DC2626; width: 22px; height: 22px;"></i>1. Tiến Công Tích Cực</h4>
+                  <span class="pillar-tag tag-red">Tư Tưởng</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>Phòng thủ chủ động; liên tục quấy rối tiêu hao sinh lực địch.</li>
+                  <li>"Tiên phát chế nhân": Chủ động đánh đòn phủ đầu căn cứ hậu cần.</li>
+                  <li>Lui binh chiến lược: <strong>"Tránh lúc giặc hăng, đánh khi giặc mệt"</strong>.</li>
+                </ul>
               </div>
 
-              <!-- Pillar 2: Toàn dân đánh giặc -->
-              <div class="grid-pillar-card" style="border-top-color: #0284C7;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #0284C7; background: #E0F2FE;">
-                        <i data-lucide="users" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">2. Toàn Dân Đánh Giặc</h3>
-                    </div>
-                    <span class="pillar-tag tag-blue">Thế Trận</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>"Trăm họ đều là binh", kết hợp quân triều đình với dân binh làng xã thành pháo đài.</span></li>
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Biến cả non sông thành chiến trường giăng bẫy tiêu hao sinh lực địch khắp nơi.</span></li>
-                    <li><span class="bullet-dot" style="background: #0284C7;"></span><span>Khơi dậy lòng yêu nước tột bậc, tạo nên sức đề kháng toàn dân vô địch.</span></li>
-                  </ul>
+              <!-- Pillar 2 -->
+              <div class="split-grid-card" style="border-top: 5px solid #0284C7;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="users" style="color: #0284C7; width: 22px; height: 22px;"></i>2. Toàn Dân Đánh Giặc</h4>
+                  <span class="pillar-tag tag-blue">Thế Trận</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li><strong>"Trăm họ đều là binh"</strong>: Quân triều đình kết hợp dân binh làng xã.</li>
+                  <li>Biến sông núi thành chiến hào, giăng bẫy tiêu hao địch khắp nơi.</li>
+                  <li>Sức mạnh tổng hợp từ khối đại đoàn kết toàn dân tộc.</li>
+                </ul>
               </div>
 
-              <!-- Pillar 3: Dĩ đoản chế trường -->
-              <div class="grid-pillar-card" style="border-top-color: #EA580C;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #EA580C; background: #FFEDD5;">
-                        <i data-lucide="activity" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">3. Dĩ Đoản Chế Trường</h3>
-                    </div>
-                    <span class="pillar-tag tag-orange">Tác Chiến</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Dùng sở trường cận chiến, phục kích, đánh đêm, thủy chiến khắc chế kỵ binh giáo dài.</span></li>
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Chiến thuật "Vườn không nhà trống" đẩy giặc vào thế đói khát, dịch bệnh sa lầy.</span></li>
-                    <li><span class="bullet-dot" style="background: #EA580C;"></span><span>Linh hoạt chuyển hóa từ phân tán bảo toàn sang tập trung phản công tổng lực dứt điểm.</span></li>
-                  </ul>
+              <!-- Pillar 3 -->
+              <div class="split-grid-card" style="border-top: 5px solid #EA580C;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="activity" style="color: #EA580C; width: 22px; height: 22px;"></i>3. Dĩ Đoản Chế Trường</h4>
+                  <span class="pillar-tag tag-orange">Tác Chiến</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>Dùng sở trường cận chiến, phục kích, đánh đêm khắc chế giặc.</li>
+                  <li>Chiến thuật <strong>"Vườn không nhà trống"</strong> đẩy địch vào thế sa lầy.</li>
+                  <li>Linh hoạt chuyển hóa: từ phân tán bảo toàn sang tổng phản công.</li>
+                </ul>
               </div>
 
-              <!-- Pillar 4: Tâm công & Ngoại giao -->
-              <div class="grid-pillar-card" style="border-top-color: #7C3AED;">
-                <div>
-                  <div class="pillar-card-header">
-                    <div class="pillar-card-title-group">
-                      <div class="pillar-icon-box" style="color: #7C3AED; background: #F3E8FF;">
-                        <i data-lucide="heart-handshake" style="width: 28px; height: 28px;"></i>
-                      </div>
-                      <h3 class="pillar-title">4. Đòn "Tâm Công"</h3>
-                    </div>
-                    <span class="pillar-tag tag-purple">Nhân Nghĩa</span>
-                  </div>
-                  <ul class="pillar-bullets">
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Nguyễn Trãi: <em>"Đem đại nghĩa để thắng hung tàn, lấy chí nhân để thay cường bạo"</em>.</span></li>
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Đánh vào lòng người (Tâm công) làm rệu rã tinh thần chỉ huy và binh sĩ địch.</span></li>
-                    <li><span class="bullet-dot" style="background: #7C3AED;"></span><span>Mở đường hòa hiếu: Cấp ngựa thuyền cho giặc rút quân, giữ gìn hòa bình bền vững.</span></li>
-                  </ul>
+              <!-- Pillar 4 -->
+              <div class="split-grid-card" style="border-top: 5px solid #7C3AED;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="heart-handshake" style="color: #7C3AED; width: 22px; height: 22px;"></i>4. Nghệ Thuật "Tâm Công"</h4>
+                  <span class="pillar-tag tag-purple">Nhân Nghĩa</span>
                 </div>
+                <ul class="split-grid-bullets">
+                  <li>Đánh vào lòng người, làm rệu rã tinh thần chỉ huy và binh sĩ giặc.</li>
+                  <li>Lấy <strong>Chính nghĩa thắng Phi nghĩa</strong>, nâng cao ngọn cờ dân tộc.</li>
+                  <li>Mở đường hòa hiếu: Cấp ngựa thuyền cho giặc rút lui bền vững.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right: Doctrine Photo Card -->
+            <div class="slide-photo-card">
+              <img src="assets/vn-doctrine.jpg" alt="Trần Hưng Đạo và Binh pháp Đại Việt" class="slide-photo-img">
+              <div class="slide-photo-overlay">
+                <div class="photo-overlay-badge">
+                  <i data-lucide="book-open" style="width: 14px; height: 14px;"></i> BINH THƯ YẾU LƯỢC & HỊCH TƯỚNG SĨ
+                </div>
+                <h3 class="photo-overlay-title">Mưu Lược Binh Pháp Đại Việt</h3>
+                <p class="photo-overlay-desc">Đỉnh cao tư duy quân sự: "Lấy yếu chống mạnh, lấy ít địch nhiều" bằng trí tuệ mưu lược và lòng yêu nước bất diệt.</p>
               </div>
             </div>
           </div>
@@ -714,109 +656,82 @@
         </header>
 
         <div class="slide-body" style="background: radial-gradient(circle at 50% 50%, #061B3B 0%, #020914 100%);">
-          <!-- Floating Interactive Button for Cyber Warfare Cases -->
-          <button class="btn-slide-7-cases" onclick="toggleSlide7Modal(true)" title="Xem chi tiết các cuộc tấn công mạng phá hủy hạ tầng">
-            <i data-lucide="shield-alert" style="width: 18px; height: 18px;"></i>
-            <span>3 Đại Án Tác Chiến Mạng Thực Tế</span>
-          </button>
+          <div class="slide-7-cyber-container" style="height: 100%; display: flex; flex-direction: column; gap: 14px;">
+            <div class="slide-title-wrap" style="display: flex; align-items: center; justify-content: space-between;">
+              <div>
+                <span class="slide-category" style="color: #38BDF8;">
+                  <i data-lucide="globe" style="width: 18px; height: 18px;"></i>
+                  Mặt trận chiến tranh phi quy ước thế kỷ 21
+                </span>
+                <h2 class="slide-title" style="color: #FFFFFF; font-size: 38px;">
+                  KHÔNG GIAN MẠNG (CYBERSPACE) – MẶT TRẬN CHIẾN LƯỢC THỨ 5
+                </h2>
+                <p class="slide-subtitle" style="color: #94A3B8; font-size: 20px;">
+                  Chiến trường không tiếng súng nhưng có khả năng làm tê liệt toàn diện hạ tầng quốc gia
+                </p>
+              </div>
 
-          <div class="slide-7-cyber-container">
-            <div class="slide-title-wrap">
-              <span class="slide-category" style="color: #38BDF8;">
-                <i data-lucide="globe" style="width: 18px; height: 18px;"></i>
-                Mặt trận chiến tranh phi quy ước thế kỷ 21
-              </span>
-              <h2 class="slide-title" style="color: #FFFFFF;">
-                KHÔNG GIAN MẠNG (CYBERSPACE) – MẶT TRẬN CHIẾN LƯỢC THỨ 5
-              </h2>
-              <p class="slide-subtitle" style="color: #94A3B8;">
-                Chiến trường không tiếng súng nhưng có tính hủy diệt và khả năng làm tê liệt toàn diện hạ tầng quốc gia
-              </p>
+              <!-- Interactive Deep-Dive Button (Clean and properly aligned) -->
+              <button class="btn-slide-7-cases" onclick="toggleSlide7Modal(true)" title="Xem 3 cuộc tấn công mạng quy mô quốc gia">
+                <i data-lucide="shield-alert" style="width: 18px; height: 18px;"></i>
+                <span>3 Đại Án Tác Chiến Mạng Thực Tế</span>
+              </button>
             </div>
 
-            <!-- 5-Domain National Defense Bar -->
-            <div class="cyber-domain-bar">
-              <div class="domain-pill"><i data-lucide="map" style="width: 20px; height: 20px;"></i>1. Đất Liền</div>
-              <div class="domain-pill"><i data-lucide="cloud" style="width: 20px; height: 20px;"></i>2. Vùng Trời</div>
-              <div class="domain-pill"><i data-lucide="anchor" style="width: 20px; height: 20px;"></i>3. Vùng Biển</div>
-              <div class="domain-pill"><i data-lucide="radio" style="width: 20px; height: 20px;"></i>4. Vũ Trụ</div>
+            <!-- 5-Domain Defense Bar -->
+            <div class="cyber-domain-bar" style="margin-bottom: 0;">
+              <div class="domain-pill"><i data-lucide="map" style="width: 18px; height: 18px;"></i>1. Đất Liền</div>
+              <div class="domain-pill"><i data-lucide="cloud" style="width: 18px; height: 18px;"></i>2. Vùng Trời</div>
+              <div class="domain-pill"><i data-lucide="anchor" style="width: 18px; height: 18px;"></i>3. Vùng Biển</div>
+              <div class="domain-pill"><i data-lucide="radio" style="width: 18px; height: 18px;"></i>4. Vũ Trụ</div>
               <div class="domain-pill active-cyber">
-                <i data-lucide="wifi" style="width: 22px; height: 22px;"></i>
+                <i data-lucide="wifi" style="width: 20px; height: 20px;"></i>
                 5. KHÔNG GIAN MẠNG (CYBERSPACE)
               </div>
             </div>
 
-            <!-- 2 Core Cyber Threat Columns -->
-            <div class="slide-7-threats-grid">
-              <!-- Threat 1: Critical Infrastructure -->
-              <div class="cyber-threat-card">
-                <div>
-                  <div class="threat-card-top">
-                    <div class="threat-icon-box">
-                      <i data-lucide="server" style="width: 30px; height: 30px;"></i>
-                    </div>
-                    <div>
-                      <span style="font-size: 14px; font-weight: 800; color: #38BDF8; text-transform: uppercase;">Mối đe dọa 01</span>
-                      <h3>Tê Liệt Hạ Tầng Trọng Yếu Quốc Gia</h3>
-                    </div>
+            <!-- Split View: Cyber Command Photo + 2 Core Threat Cards -->
+            <div class="slide-split-grid" style="flex: 1; min-height: 0;">
+              <!-- Left: Cyber Operations Photo Card -->
+              <div class="slide-photo-card">
+                <img src="assets/vn-cyber-command.jpg" alt="Trung tâm Tác chiến An ninh mạng Quốc gia" class="slide-photo-img">
+                <div class="slide-photo-overlay">
+                  <div class="photo-overlay-badge" style="background: linear-gradient(135deg, #0284C7, #003B7A);">
+                    <i data-lucide="shield" style="width: 14px; height: 14px;"></i> TRUNG TÂM TÁC CHIẾN AN NINH MẠNG (SOC)
                   </div>
-                  <ul class="threat-body-list">
-                    <li><i data-lucide="alert-triangle" style="color: #38BDF8; width: 22px; height: 22px; flex-shrink: 0;"></i><span>Tấn công mã độc làm sập lưới điện quốc gia, điều hành cấp nước sạch đô thị.</span></li>
-                    <li><i data-lucide="alert-triangle" style="color: #38BDF8; width: 22px; height: 22px; flex-shrink: 0;"></i><span>Xâm nhập hệ thống tài chính ngân hàng, cơ sở dữ liệu kho bạc, sàn giao dịch.</span></li>
-                    <li><i data-lucide="alert-triangle" style="color: #38BDF8; width: 22px; height: 22px; flex-shrink: 0;"></i><span>Tê liệt mạng chỉ huy quân sự C4ISR, trạm điều hành viễn thông và bệnh viện.</span></li>
-                  </ul>
-                </div>
-                <div class="threat-summary-bar">
-                  <i data-lucide="zap" style="width: 20px; height: 20px; color: #38BDF8;"></i>
-                  <span>Hậu quả: Làm tê liệt đất nước mà không cần bắn một phát đạn!</span>
+                  <h3 class="photo-overlay-title">Mặt Trận Không Tiếng Súng</h3>
+                  <p class="photo-overlay-desc">Bảo vệ vững chắc hệ thống chỉ huy C4ISR, mạng viễn thông, lưới điện và chủ quyền dữ liệu số quốc gia.</p>
                 </div>
               </div>
 
-              <!-- Threat 2: Info & Cognitive Warfare -->
-              <div class="cyber-threat-card danger">
-                <div>
-                  <div class="threat-card-top">
-                    <div class="threat-icon-box">
-                      <i data-lucide="bot" style="width: 30px; height: 30px;"></i>
-                    </div>
-                    <div>
-                      <span style="font-size: 14px; font-weight: 800; color: #FB923C; text-transform: uppercase;">Mối đe dọa 02</span>
-                      <h3>Chiến Tranh Thông Tin & Tâm Lý Số</h3>
-                    </div>
+              <!-- Right: 2 Threat Cards -->
+              <div class="split-cards-stack">
+                <!-- Threat 1 -->
+                <div class="split-card" style="background: rgba(255, 255, 255, 0.06); border-color: rgba(56, 189, 248, 0.3);">
+                  <div class="split-card-icon" style="background: rgba(56, 189, 248, 0.2); color: #38BDF8;">
+                    <i data-lucide="server" style="width: 26px; height: 26px;"></i>
                   </div>
-                  <ul class="threat-body-list">
-                    <li><i data-lucide="alert-circle" style="color: #FB923C; width: 22px; height: 22px; flex-shrink: 0;"></i><span>Sử dụng tin giả (Fake News) lan truyền với tốc độ ánh sáng trên mạng xã hội.</span></li>
-                    <li><i data-lucide="alert-circle" style="color: #FB923C; width: 22px; height: 22px; flex-shrink: 0;"></i><span>Công nghệ Deepfake AI tạo video/âm thanh giả mạo lãnh đạo kích động biểu tình.</span></li>
-                    <li><i data-lucide="alert-circle" style="color: #FB923C; width: 22px; height: 22px; flex-shrink: 0;"></i><span>Botnets thao túng thuật toán dư luận, xuyên tạc lịch sử, chia rẽ khối đại đoàn kết.</span></li>
-                  </ul>
+                  <div class="split-card-content">
+                    <h4 style="color: #38BDF8;">Tê Liệt Hạ Tầng Trọng Yếu Quốc Gia</h4>
+                    <p style="color: #CBD5E1;">Tấn công mã độc làm sập <strong>lưới điện, nhà máy nước, ngân hàng và sàn giao dịch</strong>; vô hiệu hóa hệ thống thông tin chỉ huy mà không cần bắn một phát đạn.</p>
+                  </div>
                 </div>
-                <div class="threat-summary-bar">
-                  <i data-lucide="flame" style="width: 20px; height: 20px; color: #FB923C;"></i>
-                  <span>Nguy cơ: Làm rỗng ruột tư tưởng và chuyển hóa từ bên trong!</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Modal for 3 Cyber Warfare Cases -->
-          <div id="slide-7-modal" class="slide-7-modal-overlay" onclick="if(event.target === this) toggleSlide7Modal(false)">
-            <div class="slide-7-modal-card">
-              <div class="slide-7-modal-header">
-                <h3><i data-lucide="shield-alert" style="color: var(--color-primary); width: 26px; height: 26px;"></i>3 ĐẠI ÁN TÁC CHIẾN KHÔNG GIAN MẠNG TRÊN THẾ GIỚI</h3>
-                <button class="slide-7-modal-close" onclick="toggleSlide7Modal(false)"><i data-lucide="x" style="width: 24px; height: 24px;"></i></button>
-              </div>
-              <div class="slide-7-modal-grid">
-                <div class="case-card">
-                  <h4><i data-lucide="cpu" style="width: 22px; height: 22px;"></i>1. Sâu Mã Độc Stuxnet (2010)</h4>
-                  <p>Vũ khí mạng phá hủy hơn 1.000 máy ly tâm làm giàu Urani của Iran mà không cần không kích — Khởi đầu kỷ nguyên chiến tranh mạng cấp quốc gia.</p>
+                <!-- Threat 2 -->
+                <div class="split-card" style="background: rgba(255, 255, 255, 0.06); border-color: rgba(249, 115, 22, 0.3);">
+                  <div class="split-card-icon" style="background: rgba(249, 115, 22, 0.2); color: #FB923C;">
+                    <i data-lucide="bot" style="width: 26px; height: 26px;"></i>
+                  </div>
+                  <div class="split-card-content">
+                    <h4 style="color: #FB923C;">Chiến Tranh Thông Tin & Tâm Lý Số</h4>
+                    <p style="color: #CBD5E1;">Sử dụng <strong>Tin giả (Fake News), Deepfake AI và Botnets</strong> thao túng thuật toán mạng xã hội, xuyên tạc lịch sử, nhằm làm rỗng ruột tư tưởng và phá hoại khối đoàn kết.</p>
+                  </div>
                 </div>
-                <div class="case-card">
-                  <h4><i data-lucide="zap-off" style="width: 22px; height: 22px;"></i>2. Đánh Sập Lưới Điện Ukraine (2015)</h4>
-                  <p>Mã độc BlackEnergy xâm nhập hệ thống SCADA làm tê liệt 3 công ty điện lực miền Tây Ukraine giữa mùa đông lạnh giá, khiến 230.000 dân mất điện.</p>
-                </div>
-                <div class="case-card danger">
-                  <h4 style="color: var(--color-accent-crimson);"><i data-lucide="alert-octagon" style="width: 22px; height: 22px;"></i>3. Mã Độc Tống Tiền Ransomware Toàn Cầu</h4>
-                  <p>Chiến dịch WannaCry và NotPetya đánh sập hệ thống bệnh viện Anh (NHS), hãng vận tải Maersk gây thiệt hại hàng chục tỷ USD trong vài giờ.</p>
+
+                <!-- Threat Summary Callout -->
+                <div style="background: rgba(234, 88, 12, 0.12); border: 1.5px dashed rgba(234, 88, 12, 0.5); border-radius: 12px; padding: 12px 18px; display: flex; align-items: center; gap: 12px; color: #FED7AA; font-size: 18px; font-weight: 600;">
+                  <i data-lucide="alert-octagon" style="color: #F97316; width: 24px; height: 24px; flex-shrink: 0;"></i>
+                  <span><strong>Thách thức thời đại:</strong> Chiến tranh mạng có thể làm sụp đổ một quốc gia từ bên trong trước khi xung đột vũ trang nổ ra!</span>
                 </div>
               </div>
             </div>
@@ -834,7 +749,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 8: VẬN DỤNG NGHỆ THUẬT QUÂN SỰ CỔ VÀO CNTT & AN NINH MẠNG
+           SLIDE 8: VẬN DỤNG NGHỆ THUẬT CỔ VÀO CNTT (SPLIT WITH MATRIX PHOTO)
            ==================================================================== -->
       <section class="slide" id="slide-8" data-slide-index="8">
         <header class="slide-header">
@@ -851,92 +766,99 @@
           <div class="slide-title-wrap">
             <span class="slide-category"><i data-lucide="cpu" style="width: 18px; height: 18px;"></i>Kế thừa binh pháp cha ông vào kỹ nghệ số</span>
             <h2 class="slide-title">VẬN DỤNG NGHỆ THUẬT CỔ VÀO KIẾN TRÚC AN NINH CNTT</h2>
-            <p class="slide-subtitle">4 phép đối sánh biện chứng giữa binh pháp giữ nước và kỹ nghệ an toàn thông tin thế kỷ 21</p>
+            <p class="slide-subtitle">4 phép đối sánh biện chứng giữa binh pháp giữ nước và kỹ nghệ an toàn thông tin</p>
           </div>
 
-          <div class="slide-8-it-matrix">
-            <!-- Card 1: Thanh dã -> Zero Trust -->
-            <div class="it-compare-card">
-              <div class="compare-card-dual-header">
-                <span class="ancient-tactic-pill">
-                  <i data-lucide="shield" style="width: 16px; height: 16px;"></i>
-                  "Vườn Không Nhà Trống"
-                </span>
-                <span class="compare-arrow">➔</span>
-                <span class="modern-tech-pill">
-                  <i data-lucide="lock" style="width: 16px; height: 16px;"></i>
-                  Zero Trust & Data Isolation
-                </span>
+          <div class="slide-split-grid">
+            <!-- Left: 2x2 Matrix Cards -->
+            <div class="split-2x2-grid">
+              <!-- Card 1 -->
+              <div class="it-compare-card">
+                <div class="compare-card-dual-header">
+                  <span class="ancient-tactic-pill">
+                    <i data-lucide="shield" style="width: 15px; height: 15px;"></i> "Vườn Không Nhà Trống"
+                  </span>
+                  <span class="compare-arrow">➔</span>
+                  <span class="modern-tech-pill">
+                    <i data-lucide="lock" style="width: 15px; height: 15px;"></i> Zero Trust & Data Isolation
+                  </span>
+                </div>
+                <h4 class="it-card-title" style="font-size: 20px;">Bảo Mật Không Tin Tưởng & Mã Hóa</h4>
+                <ul class="it-body-bullets" style="font-size: 19px;">
+                  <li><strong>Không tin mặc định:</strong> Xác thực liên tục mọi truy cập trong & ngoài mạng.</li>
+                  <li><strong>Mã hóa đầu cuối:</strong> Hacker vào chỉ thấy "nhà trống", dữ liệu đã mã hóa vô nghĩa.</li>
+                  <li><strong>Sao lưu phân tán:</strong> Khôi phục tức thì mà không cần trả tiền chuộc.</li>
+                </ul>
               </div>
-              <h4 class="it-card-title">Mô Hình Bảo Mật Không Tin Tưởng & Cách Ly Dữ Liệu</h4>
-              <ul class="it-body-bullets">
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Không tin mặc định:</strong> Xác thực liên tục mọi truy cập bên trong và bên ngoài mạng.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Mã hóa đầu cuối:</strong> Hacker chọc thủng tường lửa chỉ thấy "nhà trống", dữ liệu đã mã hóa vô nghĩa.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Disaster Recovery:</strong> Sao lưu phân tán giúp khôi phục tức thì mà không cần trả tiền chuộc.</span></li>
-              </ul>
+
+              <!-- Card 2 -->
+              <div class="it-compare-card">
+                <div class="compare-card-dual-header">
+                  <span class="ancient-tactic-pill">
+                    <i data-lucide="zap" style="width: 15px; height: 15px;"></i> "Tiên Phát Chế Nhân"
+                  </span>
+                  <span class="compare-arrow">➔</span>
+                  <span class="modern-tech-pill">
+                    <i data-lucide="search" style="width: 15px; height: 15px;"></i> Threat Hunting & AI
+                  </span>
+                </div>
+                <h4 class="it-card-title" style="font-size: 20px;">Săn Lỗ Hổng Chủ Động Bằng AI</h4>
+                <ul class="it-body-bullets" style="font-size: 19px;">
+                  <li><strong>Chủ động đi trước:</strong> Liên tục rà quét mã nguồn và săn lỗ hổng 0-day.</li>
+                  <li><strong>AI Security:</strong> Tự động phát hiện hành vi quét cổng và trinh sát bất thường.</li>
+                  <li><strong>Chặn từ cửa ngõ:</strong> Tiêu diệt mã độc trước khi kích hoạt payload.</li>
+                </ul>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="it-compare-card">
+                <div class="compare-card-dual-header">
+                  <span class="ancient-tactic-pill">
+                    <i data-lucide="target" style="width: 15px; height: 15px;"></i> "Dĩ Đoản Chế Trường"
+                  </span>
+                  <span class="compare-arrow">➔</span>
+                  <span class="modern-tech-pill">
+                    <i data-lucide="bot" style="width: 15px; height: 15px;"></i> Honeypot & SOAR
+                  </span>
+                </div>
+                <h4 class="it-card-title" style="font-size: 20px;">Bẫy Mật Ảo & Tự Động Hóa Phòng Thủ</h4>
+                <ul class="it-body-bullets" style="font-size: 19px;">
+                  <li><strong>Lấy ít địch nhiều:</strong> Nhân lực phòng thủ ít chống lại triệu botnet toàn cầu.</li>
+                  <li><strong>Bẫy mật Honeypot:</strong> Đánh lừa tin tặc sa vào mê cung để thu thập chữ ký.</li>
+                  <li><strong>SOAR Automation:</strong> Một kỹ sư vận hành tự động bảo vệ hạ tầng khổng lồ.</li>
+                </ul>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="it-compare-card">
+                <div class="compare-card-dual-header">
+                  <span class="ancient-tactic-pill">
+                    <i data-lucide="anchor" style="width: 15px; height: 15px;"></i> "Thủy Chiến Bạch Đằng"
+                  </span>
+                  <span class="compare-arrow">➔</span>
+                  <span class="modern-tech-pill">
+                    <i data-lucide="cloud" style="width: 15px; height: 15px;"></i> Multi-Cloud & Anti-DDoS
+                  </span>
+                </div>
+                <h4 class="it-card-title" style="font-size: 20px;">Tận Dụng Hạ Tầng Phân Tán</h4>
+                <ul class="it-body-bullets" style="font-size: 19px;">
+                  <li><strong>Địa lợi băng thông:</strong> Tận dụng luồng mạng phân tán để bóp nghẹt truy cập độc hại.</li>
+                  <li><strong>Multi-Cloud WAF:</strong> Tường lửa nhiều tầng lớp như bãi cọc nhọn Bạch Đằng.</li>
+                  <li><strong>Load Balancer:</strong> Cân bằng tải bẻ gãy đợt tấn công DDoS hàng terabit.</li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Card 2: Tiên phát chế nhân -> Threat Hunting -->
-            <div class="it-compare-card">
-              <div class="compare-card-dual-header">
-                <span class="ancient-tactic-pill">
-                  <i data-lucide="zap" style="width: 16px; height: 16px;"></i>
-                  "Tiên Phát Chế Nhân"
-                </span>
-                <span class="compare-arrow">➔</span>
-                <span class="modern-tech-pill">
-                  <i data-lucide="search" style="width: 16px; height: 16px;"></i>
-                  Threat Hunting & AI Security
-                </span>
+            <!-- Right: Photo Card -->
+            <div class="slide-photo-card">
+              <img src="assets/vn-ancient-to-cyber.jpg" alt="Từ Binh pháp cổ đến An ninh mạng" class="slide-photo-img">
+              <div class="slide-photo-overlay">
+                <div class="photo-overlay-badge">
+                  <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i> KẾ THỪA BINH PHÁP NGHÌN NĂM
+                </div>
+                <h3 class="photo-overlay-title">Từ Cọc Bạch Đằng Đến Tường Lửa Số</h3>
+                <p class="photo-overlay-desc">Vận dụng sáng tạo nguyên lý tác chiến cha ông: Lấy ít địch nhiều, lấy trí tuệ công nghệ bảo vệ chủ quyền dữ liệu Việt Nam.</p>
               </div>
-              <h4 class="it-card-title">Chủ Động Săn Tìm Lỗ Hổng & Phòng Thủ Bằng Trí Tuệ Nhân Tạo</h4>
-              <ul class="it-body-bullets">
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Chủ động đi trước:</strong> Không thụ động chờ bị tấn công; liên tục rà quét mã nguồn và săn lỗi 0-day.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>AI / Machine Learning:</strong> Tự động phát hiện hành vi quét cổng (Port Scan) bất thường từ giai đoạn trinh sát.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Chặn đứng từ cửa ngõ:</strong> Tiêu diệt mã độc ngay khi chúng vừa chuẩn bị phát tán payload.</span></li>
-              </ul>
-            </div>
-
-            <!-- Card 3: Lấy ít địch nhiều -> Honeypot & SOAR -->
-            <div class="it-compare-card">
-              <div class="compare-card-dual-header">
-                <span class="ancient-tactic-pill">
-                  <i data-lucide="target" style="width: 16px; height: 16px;"></i>
-                  "Dĩ Đoản Chế Trường"
-                </span>
-                <span class="compare-arrow">➔</span>
-                <span class="modern-tech-pill">
-                  <i data-lucide="bot" style="width: 16px; height: 16px;"></i>
-                  Honeypot & Tự Động Hóa (SOAR)
-                </span>
-              </div>
-              <h4 class="it-card-title">Bẫy Mật Ảo & Tự Động Hóa Phòng Thủ An Ninh Mạng</h4>
-              <ul class="it-body-bullets">
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Lấy ít địch nhiều:</strong> Nhân lực phòng thủ ít chống lại hàng triệu botnet toàn cầu.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Bẫy mật Honeypot:</strong> Đánh lừa tin tặc sa vào mê cung giả lập để thu thập chữ ký tấn công.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Kịch bản tự động SOAR:</strong> Một kỹ sư có thể vận hành và bảo vệ toàn bộ cụm hạ tầng khổng lồ.</span></li>
-              </ul>
-            </div>
-
-            <!-- Card 4: Thủy chiến Bạch Đằng -> Cloud Native & Anti-DDoS -->
-            <div class="it-compare-card">
-              <div class="compare-card-dual-header">
-                <span class="ancient-tactic-pill">
-                  <i data-lucide="anchor" style="width: 16px; height: 16px;"></i>
-                  "Thủy Chiến Bạch Đằng"
-                </span>
-                <span class="compare-arrow">➔</span>
-                <span class="modern-tech-pill">
-                  <i data-lucide="cloud" style="width: 16px; height: 16px;"></i>
-                  Cloud Native & Chống DDoS
-                </span>
-              </div>
-              <h4 class="it-card-title">Tận Dụng Hạ Tầng Mạng Phân Tán & Bóp Nghẹt Luồng Tấn Công</h4>
-              <ul class="it-body-bullets">
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Thiên thời - Địa lợi mạng:</strong> Tận dụng đặc tính lưu lượng băng thông để bóp nghẹt truy cập độc hại.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Hạ tầng phân tán Multi-Cloud:</strong> Triển khai cụm đa vùng, tường lửa WAF nhiều lớp như bãi cọc nhọn.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span><strong>Cân bằng tải thông minh:</strong> Load Balancer phân luồng bẻ gãy các đợt tấn công DDoS hàng terabit.</span></li>
-              </ul>
             </div>
           </div>
         </div>
@@ -952,7 +874,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 9: TRÁCH NHIỆM SINH VIÊN CNTT - ĐẠI HỌC ĐẠI NAM (2x2 ACTION MATRIX)
+           SLIDE 9: TRÁCH NHIỆM SINH VIÊN CNTT (SPLIT WITH STUDENTS PHOTO)
            ==================================================================== -->
       <section class="slide" id="slide-9" data-slide-index="9">
         <header class="slide-header">
@@ -969,68 +891,71 @@
           <div class="slide-title-wrap">
             <span class="slide-category"><i data-lucide="award" style="width: 18px; height: 18px;"></i>Sứ mệnh người kỹ sư công nghệ Đại Nam</span>
             <h2 class="slide-title">4 TRỌNG TRÁCH CỦA SINH VIÊN CNTT TRONG KỶ NGUYÊN SỐ</h2>
-            <p class="slide-subtitle">Biến tri thức thuật toán và công nghệ thành vũ khí phụng sự và bảo vệ vững chắc Tổ quốc</p>
+            <p class="slide-subtitle">Biến tri thức thuật toán và công nghệ thành vũ khí phụng sự và bảo vệ Tổ quốc</p>
           </div>
 
-          <div class="slide-9-matrix">
-            <!-- Quad 1: Làm chủ công nghệ lõi -->
-            <div class="matrix-card">
-              <div class="matrix-card-top">
-                <div class="matrix-icon-wrap">
-                  <i data-lucide="cpu" style="width: 26px; height: 26px;"></i>
+          <div class="slide-split-grid reverse">
+            <!-- Left: IT Students Photo Card -->
+            <div class="slide-photo-card">
+              <img src="assets/vn-it-students.jpg" alt="Sinh viên CNTT và An toàn thông tin Đại học Đại Nam" class="slide-photo-img">
+              <div class="slide-photo-overlay">
+                <div class="photo-overlay-badge">
+                  <i data-lucide="graduation-cap" style="width: 14px; height: 14px;"></i> TUỔI TRẺ ĐẠI HỌC ĐẠI NAM
                 </div>
-                <h3 class="matrix-title">1. Làm Chủ Công Nghệ Lõi (Core Tech)</h3>
+                <h3 class="photo-overlay-title">Sứ Mệnh Kỹ Sư Công Nghệ Trẻ</h3>
+                <p class="photo-overlay-desc">Học tập thực chất, làm chủ công nghệ lõi và giữ vững đạo đức nghề nghiệp vì một Việt Nam hùng cường trên không gian số.</p>
               </div>
-              <ul class="matrix-body-list">
-                <li><i data-lucide="check" class="check-icon"></i><span>Giảm dần sự phụ thuộc vào phần mềm, hệ điều hành đóng gói ngoại quốc trong hạ tầng trọng yếu.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Nỗ lực đóng góp cho mã nguồn mở (Open Source), công nghệ Cloud tự chủ và Trí tuệ nhân tạo (AI).</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Nắm vững khoa học dữ liệu lớn (Big Data) phục vụ quản trị và an ninh quốc gia.</span></li>
-              </ul>
             </div>
 
-            <!-- Quad 2: Đạo đức nghề nghiệp -->
-            <div class="matrix-card">
-              <div class="matrix-card-top">
-                <div class="matrix-icon-wrap">
-                  <i data-lucide="shield-check" style="width: 26px; height: 26px;"></i>
+            <!-- Right: 4 Mission Cards (2x2 Grid) -->
+            <div class="split-2x2-grid">
+              <!-- Quad 1 -->
+              <div class="split-grid-card" style="border-top: 5px solid #F37021;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="cpu" style="color: #F37021; width: 22px; height: 22px;"></i>1. Làm Chủ Công Nghệ Lõi</h4>
                 </div>
-                <h3 class="matrix-title">2. Rèn Luyện Đạo Đức (Cyber Ethics)</h3>
+                <ul class="split-grid-bullets">
+                  <li>Tự chủ phần mềm, giảm phụ thuộc giải pháp ngoại quốc.</li>
+                  <li>Đóng góp mã nguồn mở, nghiên cứu AI, Cloud & Big Data.</li>
+                  <li>Làm chủ kiến trúc an ninh phục vụ quản trị quốc gia.</li>
+                </ul>
               </div>
-              <ul class="matrix-body-list">
-                <li><i data-lucide="check" class="check-icon"></i><span>Trở thành chuyên gia <strong>"Hacker mũ trắng" (White-hat)</strong> phụng sự sự an toàn của xã hội.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Tuyệt đối không tiếp tay cho cờ bạc trực tuyến, lừa đảo tài chính, phát tán mã độc tống tiền.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Tích cực tham gia các cuộc thi CTF (Capture The Flag) nâng cao kỹ năng thực chiến.</span></li>
-              </ul>
-            </div>
 
-            <!-- Quad 3: Phòng tuyến lòng dân trên MXH -->
-            <div class="matrix-card">
-              <div class="matrix-card-top">
-                <div class="matrix-icon-wrap" style="background: #FEE2E2; color: #DC2626;">
-                  <i data-lucide="users" style="width: 26px; height: 26px;"></i>
+              <!-- Quad 2 -->
+              <div class="split-grid-card" style="border-top: 5px solid #003B7A;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="shield-check" style="color: #003B7A; width: 22px; height: 22px;"></i>2. Rèn Luyện Đạo Đức Số</h4>
                 </div>
-                <h3 class="matrix-title">3. Phòng Tuyến Lòng Dân Trên MXH</h3>
+                <ul class="split-grid-bullets">
+                  <li>Trở thành chuyên gia <strong>"Hacker mũ trắng"</strong> bảo vệ xã hội.</li>
+                  <li>Nói không với cờ bạc online, lừa đảo số, mã độc tống tiền.</li>
+                  <li>Tích cực thi đấu CTF rèn luyện bản lĩnh thực chiến.</li>
+                </ul>
               </div>
-              <ul class="matrix-body-list">
-                <li><i data-lucide="check" class="check-icon"></i><span>Đi đầu vạch trần các chiêu trò lừa đảo qua mạng, nhận diện tin giả (Fake News) và Deepfake mạo danh.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Tích cực chia sẻ, bảo vệ các giá trị lịch sử và bản sắc văn hóa hào hùng của dân tộc Việt Nam.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Kiên quyết phản bác các luận điệu xuyên tạc chủ quyền biên giới, hải đảo trên không gian mạng.</span></li>
-              </ul>
-            </div>
 
-            <!-- Quad 4: Phụng sự chuyển đổi số quốc phòng -->
-            <div class="matrix-card">
-              <div class="matrix-card-top">
-                <div class="matrix-icon-wrap" style="background: #E0F2FE; color: #0284C7;">
-                  <i data-lucide="rocket" style="width: 26px; height: 26px;"></i>
+              <!-- Quad 3 -->
+              <div class="split-grid-card" style="border-top: 5px solid #DC2626;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="users" style="color: #DC2626; width: 22px; height: 22px;"></i>3. Phòng Tuyến Lòng Dân</h4>
                 </div>
-                <h3 class="matrix-title">4. Phụng Sự Chuyển Đổi Số Quốc Phòng</h3>
+                <ul class="split-grid-bullets">
+                  <li>Vạch trần lừa đảo mạng, nhận diện tin giả & Deepfake.</li>
+                  <li>Lan tỏa giá trị hào hùng của lịch sử và văn hóa dân tộc.</li>
+                  <li>Kiên quyết phản bác luận điệu xuyên tạc chủ quyền số.</li>
+                </ul>
               </div>
-              <ul class="matrix-body-list">
-                <li><i data-lucide="check" class="check-icon"></i><span>Cống hiến năng lực thuật toán vào hệ thống tự động hóa chỉ huy tác chiến (C4ISR).</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Phát triển hệ thống điều khiển thiết bị bay không người lái (UAV), radar xử lý tín hiệu.</span></li>
-                <li><i data-lucide="check" class="check-icon"></i><span>Nghiên cứu các giải pháp mật mã học và bảo mật cơ yếu phục vụ Quân đội nhân dân Việt Nam.</span></li>
-              </ul>
+
+              <!-- Quad 4 -->
+              <div class="split-grid-card" style="border-top: 5px solid #0284C7;">
+                <div class="split-grid-header">
+                  <h4><i data-lucide="rocket" style="color: #0284C7; width: 22px; height: 22px;"></i>4. Phụng Sự Quốc Phòng</h4>
+                </div>
+                <ul class="split-grid-bullets">
+                  <li>Cống hiến thuật toán vào hệ thống tự động hóa chỉ huy C4ISR.</li>
+                  <li>Phát triển điều khiển thiết bị bay không người lái (UAV).</li>
+                  <li>Nghiên cứu mật mã học và bảo mật cơ yếu phục vụ Tổ quốc.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1046,7 +971,7 @@
       </section>
 
       <!-- ====================================================================
-           SLIDE 10: TỔNG KẾT & 3 CÂU KẾT ĐẮT GIÁ (LAYOUT 8: CLOSING BANNER)
+           SLIDE 10: TỔNG KẾT & 3 THÔNG ĐIỆP VÀNG
            ==================================================================== -->
       <section class="slide theme-dark" id="slide-10" data-slide-index="10">
         <header class="slide-header">
@@ -1060,48 +985,48 @@
         </header>
 
         <div class="slide-body" style="background: radial-gradient(circle at 50% 40%, #0A2246 0%, #040D1C 100%);">
-          <div class="slide-10-wrap">
+          <div class="slide-10-wrap" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between; gap: 14px;">
             <!-- Quote Hero Banner with Authentic Hung Temple Photo -->
-            <div class="quote-hero-banner">
-              <div class="quote-img-box">
+            <div class="quote-hero-banner" style="margin-bottom: 0;">
+              <div class="quote-img-box" style="width: 320px; height: 180px;">
                 <img src="assets/vn-hung-temple.jpg" alt="Đền Hùng Phú Thọ">
               </div>
               <div class="quote-text-wrap">
-                <blockquote>
+                <blockquote style="font-size: 27px; line-height: 1.35;">
                   "Các Vua Hùng đã có công dựng nước, Bác cháu ta phải cùng nhau giữ lấy nước."
                 </blockquote>
-                <cite>— Lời căn dặn thiêng liêng của Chủ tịch Hồ Chí Minh (19/09/1954 tại Đền Hùng)</cite>
+                <cite style="font-size: 18px;">— Lời căn dặn thiêng liêng của Chủ tịch Hồ Chí Minh (19/09/1954 tại Đền Hùng)</cite>
               </div>
             </div>
 
-            <!-- 3 Closing Punchlines (Đắt giá nhất bài nói) -->
-            <div class="closing-cards-grid">
-              <div class="conclusion-card">
-                <h4><i data-lucide="cpu" style="width: 24px; height: 24px;"></i>1. Vũ Khí Thế Kỷ 21</h4>
-                <p>"Nếu như ngày xưa cha ông ta dùng nỏ liên châu, cọc Bạch Đằng và chiến lược vườn không nhà trống để bảo vệ từng tấc đất quê hương, thì ngày nay sinh viên CNTT chúng em bảo vệ Tổ quốc bằng từng thuật toán, tường lửa và từng dòng code tối ưu."</p>
+            <!-- 3 Closing Punchlines (Concise, punchy, scannable) -->
+            <div class="closing-cards-grid" style="gap: 16px;">
+              <div class="conclusion-card" style="padding: 16px 20px;">
+                <h4 style="font-size: 21px;"><i data-lucide="cpu" style="width: 22px; height: 22px;"></i>1. Vũ Khí Thế Kỷ 21</h4>
+                <p style="font-size: 18px; line-height: 1.4;">"Xưa cha ông dùng nỏ liên châu, cọc Bạch Đằng; nay sinh viên CNTT bảo vệ Tổ quốc bằng <strong>từng thuật toán, tường lửa và dòng code tối ưu</strong>."</p>
               </div>
 
-              <div class="conclusion-card">
-                <h4><i data-lucide="shield" style="width: 24px; height: 24px;"></i>2. Tự Chủ Công Nghệ</h4>
-                <p>"Giữ nước trong thời bình không chỉ là đứng gác nơi biên cương, mà là làm chủ công nghệ để đất nước không bị phụ thuộc, không bị bất ngờ trước bất kỳ cuộc chiến tranh công nghệ cao nào."</p>
+              <div class="conclusion-card" style="padding: 16px 20px;">
+                <h4 style="font-size: 21px;"><i data-lucide="shield" style="width: 22px; height: 22px;"></i>2. Tự Chủ Công Nghệ</h4>
+                <p style="font-size: 18px; line-height: 1.4;">"Giữ nước thời bình là <strong>làm chủ công nghệ</strong>, để đất nước không bị phụ thuộc và không bị bất ngờ trước bất kỳ hình thái chiến tranh nào."</p>
               </div>
 
-              <div class="conclusion-card">
-                <h4><i data-lucide="globe" style="width: 24px; height: 24px;"></i>3. Chủ Quyền Không Gian Số</h4>
-                <p>"Chủ quyền quốc gia trong thế kỷ 21 không dừng lại ở cột mốc biên giới, mà trải dài trên từng bit dữ liệu của không gian mạng Việt Nam."</p>
+              <div class="conclusion-card" style="padding: 16px 20px;">
+                <h4 style="font-size: 21px;"><i data-lucide="globe" style="width: 22px; height: 22px;"></i>3. Chủ Quyền Không Gian Số</h4>
+                <p style="font-size: 18px; line-height: 1.4;">"Chủ quyền quốc gia thế kỷ 21 không dừng lại ở cột mốc biên giới, mà <strong>trải dài trên từng bit dữ liệu</strong> của không gian mạng Việt Nam."</p>
               </div>
             </div>
 
-            <!-- Q&A and Thank Box -->
-            <div class="closing-action-box">
+            <!-- Q&A and Thank Box with Interactive Button -->
+            <div class="closing-action-box" style="margin-top: 0; padding: 12px 24px;">
               <div class="qa-invite">
-                <h4>XIN TRÂN TRỌNG CẢM ƠN QUÝ THẦY CÔ VÀ CÁC ĐỒNG CHÍ!</h4>
-                <p>Nhóm 1 sẵn sàng lắng nghe ý kiến đóng góp, nhận xét và giải đáp thắc mắc (Q&A).</p>
+                <h4 style="font-size: 20px;">XIN TRÂN TRỌNG CẢM ƠN QUÝ THẦY CÔ VÀ CÁC ĐỒNG CHÍ!</h4>
+                <p style="font-size: 16px;">Nhóm 1 sẵn sàng lắng nghe ý kiến đóng góp, nhận xét và giải đáp thắc mắc (Q&A).</p>
               </div>
-              <div class="closing-thank-badge">
-                <i data-lucide="message-square" style="width: 22px; height: 22px;"></i>
-                <span>HỌC ĐỂ THAY ĐỔI • PHIÊN THẢO LUẬN & HỎI ĐÁP (Q&A)</span>
-              </div>
+              <button class="btn-qa-cta" onclick="goToSlide(1)" title="Nhấn để quay lại Slide đầu / Bắt đầu phiên thảo luận">
+                <i data-lucide="message-square" style="width: 20px; height: 20px;"></i>
+                <span>PHIÊN THẢO LUẬN & HỎI ĐÁP (Q&A)</span>
+              </button>
             </div>
           </div>
         </div>
@@ -1120,12 +1045,12 @@
   </div><!-- /#viewport -->
 
   <!-- ====================================================================
-       FLOATING HUD CONTROLS
+       FLOATING HUD CONTROLS (Positioned cleanly, non-blocking)
        ==================================================================== -->
   <div id="hud-controls">
     <!-- Prev Button -->
     <button class="hud-btn" id="btn-prev" title="Trang trước (← / PageUp)" onclick="prevSlide()">
-      <i data-lucide="chevron-left" style="width: 22px; height: 22px;"></i>
+      <i data-lucide="chevron-left" style="width: 20px; height: 20px;"></i>
     </button>
 
     <!-- Slide Jump Dropdown -->
@@ -1143,55 +1068,55 @@
     </select>
 
     <!-- Next Button -->
-    <button class="hud-btn primary" id="btn-next" title="Trang kế (→ / Space)" onclick="nextSlide()">
-      <i data-lucide="chevron-right" style="width: 22px; height: 22px;"></i>
+    <button class="hud-btn" id="btn-next" title="Trang kế (→ / Space)" onclick="nextSlide()">
+      <i data-lucide="chevron-right" style="width: 20px; height: 20px;"></i>
     </button>
 
     <div class="hud-divider"></div>
 
     <!-- Timer Control -->
     <div class="hud-timer-badge">
-      <i data-lucide="timer" style="width: 18px; height: 18px;"></i>
+      <i data-lucide="timer" style="width: 16px; height: 16px;"></i>
       <span id="hud-timer-display">00:00</span>
     </div>
     <button class="hud-btn" id="btn-timer-toggle" title="Tạm dừng / Tiếp tục đếm giờ" onclick="toggleTimer()">
-      <i data-lucide="play" id="icon-timer-state" style="width: 18px; height: 18px;"></i>
+      <i data-lucide="play" id="icon-timer-state" style="width: 17px; height: 17px;"></i>
     </button>
     <button class="hud-btn" id="btn-timer-reset" title="Đặt lại bộ đếm giờ" onclick="resetTimer()">
-      <i data-lucide="rotate-ccw" style="width: 18px; height: 18px;"></i>
+      <i data-lucide="rotate-ccw" style="width: 17px; height: 17px;"></i>
     </button>
 
     <div class="hud-divider"></div>
 
     <!-- Fullscreen Toggle -->
     <button class="hud-btn" id="btn-fullscreen" title="Toàn màn hình (F)" onclick="toggleFullscreen()">
-      <i data-lucide="maximize" id="icon-fullscreen" style="width: 19px; height: 19px;"></i>
+      <i data-lucide="maximize" id="icon-fullscreen" style="width: 18px; height: 18px;"></i>
     </button>
 
     <!-- Focus Mode / Hide HUD Toggle -->
     <button class="hud-btn" id="btn-focus-mode" title="Ẩn/Hiện thanh điều khiển (H)" onclick="toggleHUD()">
-      <i data-lucide="eye" style="width: 19px; height: 19px;"></i>
+      <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
     </button>
 
     <!-- Export PDF (Canvas 2K) -->
-    <button class="hud-btn text-btn" id="btn-export-pdf" title="Xuất toàn bộ 10 Slide thành 1 file PDF (Canvas 2K siêu nét)" onclick="exportToPDF2K()">
-      <i data-lucide="file-text" style="width: 17px; height: 17px;"></i>
+    <button class="hud-btn text-btn" id="btn-export-pdf" title="Xuất 10 Slide thành 1 file PDF (Canvas 2K)" onclick="exportToPDF2K()">
+      <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
       <span>Xuất PDF</span>
     </button>
 
     <!-- Export PPTX (Canvas 2K) -->
-    <button class="hud-btn primary text-btn" id="btn-export-pptx" title="Xuất toàn bộ 10 Slide thành 1 file PowerPoint (Canvas 2K siêu nét)" onclick="exportToPPTX2K()">
-      <i data-lucide="presentation" style="width: 17px; height: 17px;"></i>
+    <button class="hud-btn primary text-btn" id="btn-export-pptx" title="Xuất 10 Slide thành 1 file PowerPoint (Canvas 2K)" onclick="exportToPPTX2K()">
+      <i data-lucide="presentation" style="width: 16px; height: 16px;"></i>
       <span>Xuất PPTX</span>
     </button>
 
     <!-- Shortcuts Help -->
     <button class="hud-btn" title="Phím tắt trợ giúp (?)" onclick="toggleHelpModal(true)">
-      <i data-lucide="help-circle" style="width: 19px; height: 19px;"></i>
+      <i data-lucide="help-circle" style="width: 18px; height: 18px;"></i>
     </button>
   </div>
 
-  <!-- Keyboard Shortcuts Modal -->
+  <!-- Keyboard Shortcuts Modal (Global Root) -->
   <div class="modal-overlay" id="help-modal" onclick="if(event.target===this) toggleHelpModal(false)">
     <div class="modal-card">
       <div class="modal-header">
@@ -1227,6 +1152,30 @@
         <div class="shortcut-row">
           <span>Đóng cửa sổ trợ giúp</span>
           <span class="shortcut-key">Phím Esc</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 7 Cyber Warfare Cases Modal (Global Root outside transform stage) -->
+  <div id="slide-7-modal" class="slide-7-modal-overlay" onclick="if(event.target === this) toggleSlide7Modal(false)">
+    <div class="slide-7-modal-card">
+      <div class="slide-7-modal-header">
+        <h3><i data-lucide="shield-alert" style="color: #38BDF8; width: 26px; height: 26px;"></i>3 ĐẠI ÁN TÁC CHIẾN KHÔNG GIAN MẠNG TRÊN THẾ GIỚI</h3>
+        <button class="slide-7-modal-close" onclick="toggleSlide7Modal(false)"><i data-lucide="x" style="width: 22px; height: 22px;"></i></button>
+      </div>
+      <div class="slide-7-modal-grid">
+        <div class="case-card">
+          <h4><i data-lucide="cpu" style="width: 20px; height: 20px;"></i>1. Sâu Mã Độc Stuxnet (2010)</h4>
+          <p>Vũ khí không gian mạng đầu tiên phá hủy vật lý hơn 1.000 máy ly tâm làm giàu Urani của Iran mà không cần máy bay ném bom — Mở đầu kỷ nguyên chiến tranh mạng cấp quốc gia.</p>
+        </div>
+        <div class="case-card">
+          <h4><i data-lucide="zap-off" style="width: 20px; height: 20px;"></i>2. Đánh Sập Lưới Điện Ukraine (2015)</h4>
+          <p>Mã độc BlackEnergy xâm nhập hệ thống SCADA làm tê liệt 3 công ty điện lực miền Tây Ukraine giữa mùa đông lạnh giá, khiến hơn 230.000 người dân mất điện hoàn toàn.</p>
+        </div>
+        <div class="case-card">
+          <h4 style="color: #F87171;"><i data-lucide="alert-octagon" style="width: 20px; height: 20px;"></i>3. Ransomware WannaCry & NotPetya</h4>
+          <p>Mã độc tống tiền toàn cầu làm tê liệt hệ thống y tế Anh (NHS), chuỗi vận tải biển Maersk, gây thiệt hại ước tính hơn 10 tỷ USD chỉ trong vài giờ phát tán.</p>
         </div>
       </div>
     </div>
@@ -1274,7 +1223,7 @@
        ========================================================================== */
     function updateStageScale() {
       const stage = document.getElementById('slide-stage');
-      if (!stage) return;
+      if (!stage || document.body.classList.contains('exporting-2k')) return;
 
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
@@ -1295,7 +1244,6 @@
     function goToSlide(slideNum) {
       if (slideNum < 1 || slideNum > PresentationState.totalSlides) return;
 
-      const prevIndex = PresentationState.currentSlide;
       PresentationState.currentSlide = slideNum;
 
       // Update slide elements
@@ -1445,10 +1393,12 @@
       PresentationState.isHudVisible = !PresentationState.isHudVisible;
       if (PresentationState.isHudVisible) {
         hud.classList.remove('hidden');
+        hud.classList.remove('hidden-hud');
         showToast("Đã hiện thanh điều khiển.");
       } else {
         hud.classList.add('hidden');
-        showToast("Chế độ Tập trung: Nhấn 'H' để hiện lại bảng điều khiển.");
+        hud.classList.add('hidden-hud');
+        showToast("Chế độ Tập trung: Nhấn 'H' để hiện lại thanh điều khiển.");
       }
     }
 
@@ -1459,10 +1409,14 @@
       const modal = document.getElementById('help-modal');
       if (!modal) return;
       if (show) {
-        modal.classList.add('active');
+        modal.classList.add('open');
+        modal.style.opacity = '1';
+        modal.style.visibility = 'visible';
         if (window.lucide) window.lucide.createIcons();
       } else {
-        modal.classList.remove('active');
+        modal.classList.remove('open');
+        modal.style.opacity = '0';
+        modal.style.visibility = 'hidden';
       }
     }
 
@@ -1642,7 +1596,6 @@
       const total = PresentationState.totalSlides;
       const savedSlide = PresentationState.currentSlide;
       const stage = document.getElementById('slide-stage');
-      const origTransform = stage ? stage.style.transform : '';
 
       // Activate exporting mode: strips transform/transitions, hides UI web and timer displays
       document.body.classList.add('exporting-2k');
@@ -1651,52 +1604,48 @@
 
       try {
         for (let i = 1; i <= total; i++) {
+          goToSlide(i);
           if (onProgress) {
-            onProgress(i, total + 1, `Đang chụp Canvas 2K: Slide ${i}/${total}...`);
+            onProgress(i, total + 1, `Đang xử lý & chụp Slide ${i}/${total} ở độ phân giải 2K...`);
           }
 
-          // Show only target slide
-          const allSlides = document.querySelectorAll('.slide');
-          allSlides.forEach(s => s.classList.remove('active'));
+          // Allow DOM & fonts to settle
+          await new Promise(r => setTimeout(r, 220));
 
-          const targetSlide = document.getElementById(`slide-${i}`);
-          if (!targetSlide) continue;
-          targetSlide.classList.add('active');
+          const slideEl = document.getElementById(`slide-${i}`);
+          if (!slideEl) continue;
 
-          // Ensure icons and layout are fully rendered
-          if (window.lucide) {
-            window.lucide.createIcons();
-          }
-
-          // Delay for DOM layout reflow and font painting
-          await new Promise(r => setTimeout(r, 120));
-
-          // Capture element at 2K resolution
-          const canvas = await html2canvas(targetSlide, {
-            scale: 2560 / 1920,
+          // html2canvas 2K Capture (2560 x 1440)
+          const canvas = await html2canvas(slideEl, {
+            scale: 2560 / 1920, // 1.3333x scale factor = exact 2560x1440
             width: 1920,
             height: 1080,
             useCORS: true,
             allowTaint: true,
-            backgroundColor: null,
             logging: false,
+            backgroundColor: null,
             imageTimeout: 15000,
             onclone: (clonedDoc) => {
               const clonedSlide = clonedDoc.getElementById(`slide-${i}`);
-              fixSlideImagesForExport(clonedSlide, targetSlide);
+              if (clonedSlide) {
+                clonedSlide.style.width = '1920px';
+                clonedSlide.style.height = '1080px';
+                clonedSlide.style.transform = 'none';
+                clonedSlide.style.position = 'relative';
+
+                // Fix image aspect ratio
+                fixSlideImagesForExport(clonedSlide, slideEl);
+              }
             }
           });
 
-          // Lossless PNG for crisp typography, icons, and diagrams
-          const dataUrl = canvas.toDataURL('image/png');
+          const dataUrl = canvas.toDataURL('image/png', 1.0);
           capturedImages.push(dataUrl);
         }
 
         return capturedImages;
       } finally {
-        // Restore presentation state and layout
         document.body.classList.remove('exporting-2k');
-        if (stage) stage.style.transform = origTransform;
         goToSlide(savedSlide);
         updateStageScale();
         isExporting2K = false;
