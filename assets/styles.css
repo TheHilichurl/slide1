@@ -3352,17 +3352,39 @@ body.exporting-2k .slide-timer-badge {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.10) !important;
 }
 
-/* Slide 10 quote & cards */
-#slide-10 .quote-hero-card {
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(243, 112, 33, 0.07) !important;
+/* Slide 10 quote & cards (Enlarged +35%) */
+#slide-10 .quote-hero-banner {
+  padding: 26px 42px !important;
+  gap: 44px !important;
 }
 
-#slide-10 .quote-text {
+#slide-10 .quote-img-box {
+  width: 560px !important;
+  height: 315px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.65) !important;
+  border: 3px solid rgba(255, 255, 255, 0.55) !important;
+}
+
+#slide-10 .quote-text-wrap {
+  gap: 20px !important;
+}
+
+#slide-10 .quote-text-wrap blockquote {
+  font-size: 58px !important;
+  line-height: 1.25 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.5px !important;
+  color: #FFFFFF !important;
+  white-space: nowrap !important;
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.20), 0 0 32px rgba(251, 146, 60, 0.15), 0 0 48px rgba(243, 112, 33, 0.08) !important;
 }
 
-#slide-10 .quote-author {
+#slide-10 .quote-text-wrap cite {
+  font-size: 32px !important;
+  font-weight: 700 !important;
   color: #FDBA74 !important;
+  letter-spacing: 0.4px !important;
   text-shadow: 0 0 10px rgba(251, 146, 60, 0.20) !important;
 }
 
