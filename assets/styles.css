@@ -2252,11 +2252,11 @@ html, body {
   border: 1.5px solid var(--color-border);
   border-left: 6px solid var(--color-primary);
   border-radius: var(--radius-md);
-  padding: 14px 18px;
+  padding: 18px 22px;
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
   flex: 1;
   transition: all 0.3s;
 }
@@ -2282,7 +2282,7 @@ html, body {
 
 .history-card-header h4 {
   font-family: var(--font-heading);
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 800;
   color: var(--color-secondary);
   display: flex;
@@ -2291,18 +2291,18 @@ html, body {
 }
 
 .history-time-badge {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
-  padding: 4px 14px;
+  padding: 5px 14px;
   border-radius: var(--radius-full);
   background: var(--color-primary-soft);
   color: var(--color-primary-dark);
 }
 
 .history-event-card p {
-  font-size: 28px;
+  font-size: 30px;
   color: #1E293B;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .history-event-card cite {
@@ -2325,7 +2325,7 @@ html, body {
 
 .battle-card-media {
   position: relative;
-  height: 250px;
+  height: 235px;
   overflow: hidden;
 }
 
@@ -2366,8 +2366,8 @@ html, body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-size: 28px;
+  gap: 12px;
+  font-size: 30px;
   color: #1E293B;
 }
 
@@ -2375,8 +2375,8 @@ html, body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  line-height: 1.35;
-  font-size: 28px;
+  line-height: 1.38;
+  font-size: 30px;
 }
 
 /* ==========================================================================
@@ -2849,30 +2849,109 @@ html, body {
   line-height: 1.3;
 }
 
-/* Slide 6 Fine-tuning to fit 760px available height */
-#slide-6 .split-grid-card {
-  padding: 10px 14px;
-  gap: 5px;
+/* ==========================================================================
+   TARGET SLIDES PROJECTION FONT BOOST (SLIDES 3, 5, 6, 8)
+   Optimized for high-impact visibility, clean margins, and zero overflow
+   ========================================================================== */
+
+/* SLIDE 3 FONT BOOST */
+#slide-3 .split-grid-header h4 {
+  font-size: 29px;
+}
+#slide-3 .pillar-tag {
+  font-size: 17px;
+  padding: 4px 14px;
+}
+#slide-3 .split-grid-bullets {
+  gap: 8px;
+  font-size: 28px;
+  line-height: 1.38;
+}
+#slide-3 .split-grid-bullets li {
+  font-size: 28px;
+  line-height: 1.38;
+  padding-left: 24px;
+}
+#slide-3 .split-grid-bullets li::before {
+  font-size: 32px;
+}
+#slide-3 .split-grid-card {
+  padding: 14px 20px;
 }
 
+/* SLIDE 5 FONT BOOST */
+#slide-5 .split-grid-header h4 {
+  font-size: 25px;
+}
+#slide-5 .pillar-tag {
+  font-size: 15px;
+  padding: 3px 10px;
+}
+#slide-5 .split-grid-bullets {
+  gap: 6px;
+  font-size: 27px;
+  line-height: 1.35;
+}
+#slide-5 .split-grid-bullets li {
+  font-size: 27px;
+  line-height: 1.35;
+  padding-left: 22px;
+}
+#slide-5 .split-grid-card {
+  padding: 12px 18px;
+}
+
+/* SLIDE 6 FONT BOOST */
 #slide-6 .split-grid-header h4 {
-  font-size: 24px;
+  font-size: 26px;
 }
-
+#slide-6 .pillar-tag {
+  font-size: 15px;
+  padding: 3px 10px;
+}
 #slide-6 .split-grid-bullets {
-  gap: 4px;
-  font-size: 22px;
-  line-height: 1.32;
+  gap: 8px;
+  font-size: 27px;
+  line-height: 1.36;
 }
-
 #slide-6 .split-grid-bullets li {
-  font-size: 22px;
-  line-height: 1.32;
-  padding-left: 18px;
+  font-size: 27px;
+  line-height: 1.36;
+  padding-left: 24px;
+}
+#slide-6 .split-grid-bullets li::before {
+  font-size: 30px;
+}
+#slide-6 .split-grid-card {
+  padding: 14px 18px;
 }
 
-#slide-6 .split-grid-bullets li::before {
-  font-size: 24px;
+/* SLIDE 8 FONT BOOST */
+#slide-8 .ancient-tactic-pill,
+#slide-8 .modern-tech-pill {
+  font-size: 16px;
+  padding: 3px 10px;
+}
+#slide-8 .compare-card-dual-header {
+  padding-bottom: 5px;
+}
+#slide-8 .it-card-title {
+  font-size: 27px;
+  line-height: 1.2;
+}
+#slide-8 .it-body-bullets {
+  gap: 5px;
+  font-size: 25.5px;
+  line-height: 1.35;
+}
+#slide-8 .it-body-bullets li {
+  font-size: 25.5px;
+  line-height: 1.35;
+  padding-left: 20px;
+}
+#slide-8 .it-compare-card {
+  padding: 10px 16px;
+  gap: 6px;
 }
 
 /* Dark Theme variants for split cards */
