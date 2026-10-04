@@ -1,6 +1,6 @@
 # BÁO CÁO THUYẾT TRÌNH GIÁO DỤC QUỐC PHÒNG & AN NINH
 ## Chuyên Đề: Truyền Thống & Nghệ Thuật Đánh Giặc Của Ông Cha Ta
-> **Đơn vị thực hiện:** Nhóm 1 • Tiểu đội 1 • Trung đội 1 • Đại đội 6  
+> **Đơn vị thực hiện:** Nhóm 1 • Trung đội 1 • Đại đội 6  
 > **Đơn vị đào tạo:** Trường Đại học Đại Nam (DNU)  
 > **Khẩu hiệu:** "HỌC ĐỂ THAY ĐỔI"
 
@@ -102,4 +102,4 @@ Toàn bộ 10 slide đã được xuất bằng cơ chế **Canvas 2K QHD (2560 
 </div>
 
 ---
-*© 2026 Nhóm 1 • Tiểu đội 1 • Trung đội 1 • Đại đội 6 • Môn GDQP-AN • Trường Đại học Đại Nam.*
+*© 2026 Nhóm 1 • Trung đội 1 • Đại đội 6 • Môn GDQP-AN • Trường Đại học Đại Nam.*
