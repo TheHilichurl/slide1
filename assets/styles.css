@@ -2940,54 +2940,71 @@ html, body {
   padding: 14px 18px;
 }
 
-/* SLIDE 8 FONT BOOST & ANTI-AWKWARD-BREAK ENGINE */
+/* SLIDE 8 BALANCED ENGINE: RESTORE PHOTO CARD & CLEAN 2X2 CARDS */
 #slide-8 .slide-split-grid {
-  grid-template-columns: 1.34fr 0.66fr !important;
-  gap: 22px !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr) !important;
+  gap: 24px !important;
 }
-#slide-8 .ancient-tactic-pill,
-#slide-8 .modern-tech-pill {
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
-  font-size: 15px !important;
-  padding: 3px 9px !important;
+#slide-8 .split-2x2-grid {
+  min-width: 0 !important;
+  gap: 12px !important;
+}
+#slide-8 .it-compare-card {
+  padding: 10px 14px !important;
+  gap: 6px !important;
+  min-width: 0 !important;
 }
 #slide-8 .compare-card-dual-header {
-  gap: 8px !important;
-  justify-content: flex-start !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 6px !important;
   padding-bottom: 6px !important;
 }
-#slide-8 .it-card-title {
-  font-size: 26px !important;
+#slide-8 .ancient-tactic-pill {
+  font-size: 13px !important;
+  padding: 3px 8px !important;
   white-space: nowrap !important;
+  letter-spacing: 0px !important;
+}
+#slide-8 .compare-arrow {
+  font-size: 14px !important;
+  flex-shrink: 0 !important;
+}
+#slide-8 .modern-tech-pill {
+  font-size: 12.5px !important;
+  padding: 3px 8px !important;
+  white-space: nowrap !important;
+  letter-spacing: 0px !important;
+}
+#slide-8 .it-card-title {
+  font-size: 24px !important;
+  white-space: normal !important;
   line-height: 1.25 !important;
 }
 #slide-8 .it-body-bullets {
-  gap: 6px !important;
-  font-size: 25px !important;
-  line-height: 1.38 !important;
+  gap: 5px !important;
+  font-size: 21px !important;
+  line-height: 1.35 !important;
 }
 #slide-8 .it-body-bullets li {
-  font-size: 25px !important;
-  line-height: 1.38 !important;
-  padding-left: 20px !important;
+  font-size: 21px !important;
+  line-height: 1.35 !important;
+  padding-left: 18px !important;
   text-wrap: pretty !important;
 }
-#slide-8 .it-compare-card {
-  padding: 11px 16px !important;
-  gap: 7px !important;
-}
 #slide-8 .slide-photo-overlay {
-  padding: 20px 24px !important;
+  padding: 24px 28px !important;
 }
 #slide-8 .photo-overlay-title {
-  font-size: 28px !important;
-  margin-bottom: 8px !important;
+  font-size: 32px !important;
+  margin-bottom: 6px !important;
 }
 #slide-8 .photo-overlay-desc {
-  font-size: 20px !important;
-  line-height: 1.4 !important;
+  font-size: 22px !important;
+  line-height: 1.45 !important;
 }
+
 
 /* Dark Theme variants for split cards */
 .slide.theme-dark .split-card,
