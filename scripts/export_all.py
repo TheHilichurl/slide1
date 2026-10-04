@@ -36,7 +36,8 @@ async def capture_all_slides():
             device_scale_factor=2560 / 1920
         )
         page = await context.new_page()
-        await page.goto('http://localhost:8000/index.html')
+        file_url = os.path.join(BASE_DIR, 'index.html').replace('\\', '/')
+        await page.goto(f'file:///{file_url}')
         await page.wait_for_timeout(1000)
 
         # Apply exporting-2k class to strip transforms, transitions, web UI and timers
